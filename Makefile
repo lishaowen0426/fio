@@ -55,7 +55,7 @@ SOURCE :=	$(sort $(patsubst $(SRCDIR)/%,%,$(wildcard $(SRCDIR)/crc/*.c)) \
 		eta.c verify.c memory.c io_u.c parse.c fio_sem.c rwlock.c \
 		pshared.c options.c \
 		smalloc.c filehash.c profile.c debug.c engines/cpu.c \
-		engines/mmap.c engines/sync.c engines/null.c engines/net.c \
+		engines/mmap.c engines/mmap-anno.c engines/sync.c engines/null.c engines/net.c \
 		engines/ftruncate.c engines/filecreate.c engines/filestat.c engines/filedelete.c \
 		engines/exec.c \
 		server.c client.c iolog.c backend.c libfio.c flow.c cconv.c \
