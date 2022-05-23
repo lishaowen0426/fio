@@ -17,6 +17,8 @@ thread
 numjobs=1
 runtime=300
 
+cpus_allowed=0-19
+
 #
 # depends on direct option, flags are set for pmem_memcpy() call:
 # direct=1 - PMEM_F_MEM_NONTEMPORAL,
@@ -37,7 +39,7 @@ sync=1
 # rewritten. So it will be likely that the source buffer is in CPU
 # cache and it seems to be high write performance.
 #
-scramble_buffers=1
+scramble_buffers=0
 
 #
 # Setting for fio process's CPU Node and Memory Node.
@@ -60,7 +62,7 @@ cpus_allowed_policy=split
 # as iostat will not provide useful data.
 #
 #filename=/mnt/pmem/somefile
-directory=/mnt/pmem
+directory=/pmem0
 
 [libpmem-seqwrite]
 rw=write
