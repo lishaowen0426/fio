@@ -353,7 +353,7 @@ int generic_prepopulate_file(struct thread_data *td, struct fio_file *f)
 	int flags;
 	unsigned long long left, bs;
 	char *b = NULL;
-
+        struct stat st;
 	/* generic function for regular files only */
 	assert(f->filetype == FIO_TYPE_FILE);
 
@@ -369,6 +369,17 @@ int generic_prepopulate_file(struct thread_data *td, struct fio_file *f)
 #ifdef WIN32
 	flags |= _O_BINARY;
 #endif
+        {
+            dprint(FD_FILE, "check if the file alread exists\n");
+            if(!stat(f->file_name, &st)){
+                dprint(FD_FILE,"file exists with size %lu, size requested is %lu\n", st.st_size, f->real_file_size);
+               if(st.st_size >= f->real_file_size){
+                dprint(FD_FILE,"no need to re-create the file\n");                
+                return 0;
+               }
+            }
+
+        }
 
 	dprint(FD_FILE, "open file %s, flags %x\n", f->file_name, flags);
 	f->fd = open(f->file_name, flags, 0644);

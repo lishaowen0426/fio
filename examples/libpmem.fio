@@ -15,7 +15,7 @@ iodepth=1
 iodepth_batch=1
 thread
 numjobs=1
-runtime=300
+runtime=60
 
 cpus_allowed=0-19
 
@@ -65,10 +65,12 @@ cpus_allowed_policy=split
 directory=/pmem0
 
 [libpmem-seqwrite]
+numjobs=6
 rw=write
 stonewall
 
 [libpmem-seqread]
+numjobs=14
 rw=read
 stonewall
 
