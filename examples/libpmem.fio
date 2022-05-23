@@ -1,5 +1,5 @@
 [global]
-bs=4k
+bs=256B
 size=10g
 ioengine=libpmem
 norandommap
@@ -15,7 +15,7 @@ iodepth=1
 iodepth_batch=1
 thread
 numjobs=1
-runtime=300
+runtime=60
 
 cpus_allowed=0-19
 
@@ -24,12 +24,12 @@ cpus_allowed=0-19
 # direct=1 - PMEM_F_MEM_NONTEMPORAL,
 # direct=0 - PMEM_F_MEM_TEMPORAL.
 #
-direct=1
+direct=0
 
 #
 # sync=1 means that pmem_drain() is executed for each write operation.
 #
-sync=1
+sync=0
 
 #
 # In case of 'scramble_buffers=1', the source buffer
@@ -61,16 +61,20 @@ cpus_allowed_policy=split
 # layer, so the usual filesystem/disk performance monitoring tools such
 # as iostat will not provide useful data.
 #
-#filename=/mnt/pmem/somefile
+#filename=/pmem0/fio_file
 directory=/pmem0
 
 [libpmem-seqwrite]
+filename=fio_write
+numjobs=12
 rw=write
-stonewall
+new_group
 
-[libpmem-seqread]
-rw=read
-stonewall
+#[libpmem-seqread]
+#filename=fio_read
+#numjobs=14
+#rw=read
+#new_group
 
 #[libpmem-randwrite]
 #rw=randwrite
