@@ -374,8 +374,9 @@ int generic_prepopulate_file(struct thread_data *td, struct fio_file *f)
             if(!stat(f->file_name, &st)){
                 dprint(FD_FILE,"file exists with size %lu, size requested is %lu\n", st.st_size, f->real_file_size);
                if(st.st_size >= f->real_file_size){
-                dprint(FD_FILE,"no need to re-create the file\n");                
-                return 0;
+                    dprint(FD_FILE,"no need to re-create the file\n");                
+	            f->fd = open(f->file_name, flags|~O_CREAT, 0644);
+                    return 0;
                }
             }
 
