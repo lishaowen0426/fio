@@ -76,6 +76,7 @@ new_group
 #rw=read
 #new_group
 
+
 #[libpmem-randwrite]
 #rw=randwrite
 #stonewall
