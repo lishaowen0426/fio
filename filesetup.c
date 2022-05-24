@@ -810,6 +810,8 @@ open_again:
 		snprintf(buf, sizeof(buf), "open(%s)", f->file_name);
 
 		if (__e == EINVAL && (flags & OS_O_DIRECT)) {
+                        flags |= ~OS_O_DIRECT;
+                        goto open_again;
 			log_err("fio: looks like your file system does not " \
 				"support direct=1/buffered=0\n");
 		}
