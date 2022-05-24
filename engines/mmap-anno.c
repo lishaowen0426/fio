@@ -112,7 +112,7 @@ static int fio_mmap_file(struct thread_data *td, struct fio_file *f,
 	} else
 		flags = PROT_READ;
 
-	fmd->mmap_ptr = mmap(NULL, length, flags, MAP_PRIVATE|MAP_ANONYMOUS, -1, off);
+	fmd->mmap_ptr = mmap(NULL, length, flags, MAP_PRIVATE|MAP_ANONYMOUS|MAP_POPULATE, -1, off);
 	if (fmd->mmap_ptr == MAP_FAILED) {
 		fmd->mmap_ptr = NULL;
 		td_verror(td, errno, "mmap");

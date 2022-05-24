@@ -11,6 +11,7 @@
 !_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20220220.0/
 %.o	Makefile	/^%.o : %.c$/;"	t
 16	t/zbd/test-zbd-support	/^    r=$(((RANDOM << 16) | RANDOM))$/;"	h
+A	install/bin/fio-histo-log-pctiles.py	/^    def A(self, boolean_val):$/;"	m	class:Test
 A	tools/hist/fio-histo-log-pctiles.py	/^    def A(self, boolean_val):$/;"	m	class:Test
 A32	crc/xxhash.c	/^#define A32(/;"	d	file:
 ACT_MAX_CRIT	profiles/act.c	/^#define ACT_MAX_CRIT	/;"	d	file:
@@ -67,15 +68,20 @@ ARCH_X86_H	arch/arch-x86.h	/^#define ARCH_X86_H$/;"	d
 ARPA_INET_H	os/windows/posix/include/arpa/inet.h	/^#define ARPA_INET_H$/;"	d
 ASHMEM_DEVICE	os/os-android.h	/^#define ASHMEM_DEVICE	/;"	d
 ASM_TYPES_H	os/windows/posix/include/asm/types.h	/^#define ASM_TYPES_H$/;"	d
+AUTHOR	install/man/man1/fio2gnuplot.1	/^.SH AUTHOR$/;"	s	title:fio2gnuplot
+AUTHOR	install/man/man1/fio_generate_plots.1	/^.SH AUTHOR$/;"	s	title:FIO_GENERATE_PLOTS
+AUTHOR	install/man/man1/fiologparser_hist.py.1	/^.SH AUTHOR$/;"	s	title:fiologparser_hist.py
 AUTHOR	tools/fio_generate_plots.1	/^.SH AUTHOR$/;"	s	title:FIO_GENERATE_PLOTS
 AUTHOR	tools/hist/fiologparser_hist.py.1	/^.SH AUTHOR$/;"	s	title:fiologparser_hist.py
 AUTHOR	tools/plot/fio2gnuplot.1	/^.SH AUTHOR$/;"	s	title:fio2gnuplot
 AUTHORS	fio.1	/^.SH AUTHORS$/;"	s	title:fio
+AUTHORS	install/man/man1/fio.1	/^.SH AUTHORS$/;"	s	title:fio
 A_DO_STAT	helper_thread.c	/^	A_DO_STAT	= 3,$/;"	e	enum:action	file:
 A_EXIT	helper_thread.c	/^	A_EXIT		= 1,$/;"	e	enum:action	file:
 A_RESET	helper_thread.c	/^	A_RESET		= 2,$/;"	e	enum:action	file:
 Act profile options	HOWTO.rst	/^Act profile options$/;"	s	chapter:Running predefined workloads
 Act profile options	fio.1	/^.SS "Act profile options"$/;"	S	section:fio""JOB PARAMETERS
+Act profile options	install/man/man1/fio.1	/^.SS "Act profile options"$/;"	S	section:fio""JOB PARAMETERS
 After	tools/fio.service	/^After=network.target$/;"	k	section:Unit
 Author	README.rst	/^Author$/;"	c
 BATCH_COMPLETE	t/io_uring.c	/^#define BATCH_COMPLETE	/;"	d	file:
@@ -165,8 +171,10 @@ Basic verification	doc/fio_examples.rst	/^Basic verification$/;"	c
 Binary packages	README.rst	/^Binary packages$/;"	c
 Block size	HOWTO.rst	/^Block size$/;"	s	chapter:Job file parameters
 Block size	fio.1	/^.SS "Block size"$/;"	S	section:fio""JOB PARAMETERS
+Block size	install/man/man1/fio.1	/^.SS "Block size"$/;"	S	section:fio""JOB PARAMETERS
 Buffers and memory	HOWTO.rst	/^Buffers and memory$/;"	s	chapter:Job file parameters
 Buffers and memory	fio.1	/^.SS "Buffers and memory"$/;"	S	section:fio""JOB PARAMETERS
+Buffers and memory	install/man/man1/fio.1	/^.SS "Buffers and memory"$/;"	S	section:fio""JOB PARAMETERS
 Building	README.rst	/^Building$/;"	c
 Butterfly seek pattern	doc/fio_examples.rst	/^Butterfly seek pattern$/;"	c
 CACHE_LINE_FILE	os/os-android.h	/^#define CACHE_LINE_FILE	/;"	d
@@ -184,6 +192,7 @@ CHUNK	crc/test.c	/^#define CHUNK	/;"	d	file:
 CLAT_HIST_LOG_MASK	iolog.c	/^	CLAT_HIST_LOG_MASK = 32,$/;"	e	enum:__anona13017500103	file:
 CLAT_LOG_MASK	iolog.c	/^	CLAT_LOG_MASK	= 8,$/;"	e	enum:__anona13017500103	file:
 CLIENT / SERVER	fio.1	/^.SH CLIENT \/ SERVER$/;"	s	title:fio
+CLIENT / SERVER	install/man/man1/fio.1	/^.SH CLIENT \/ SERVER$/;"	s	title:fio
 CLIENT_H	client.h	/^#define CLIENT_H$/;"	d
 CLOCK128_MULT_SHIFT	t/time-test.c	/^	CLOCK128_MULT_SHIFT	= __CLOCK128_BIT | __CLOCK_MULT_SHIFT,$/;"	e	enum:__anone3fe4fb50103	file:
 CLOCK64_2STAGE	t/time-test.c	/^	CLOCK64_2STAGE		= __CLOCK64_BIT | __CLOCK_2STAGE,$/;"	e	enum:__anone3fe4fb50103	file:
@@ -325,6 +334,7 @@ CONFIG_ZLIB	config-host.h	/^#define CONFIG_ZLIB$/;"	d
 CONFIG_ZLIB	config-host.mak	/^CONFIG_ZLIB=y$/;"	m
 CPPFLAGS	Makefile	/^CPPFLAGS= -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -DFIO_INTERNAL $(DEBUGFLAGS)$/;"	m
 CPU IDLENESS PROFILING	fio.1	/^.SH CPU IDLENESS PROFILING$/;"	s	title:fio
+CPU IDLENESS PROFILING	install/man/man1/fio.1	/^.SH CPU IDLENESS PROFILING$/;"	s	title:fio
 CPU idleness profiling	HOWTO.rst	/^CPU idleness profiling$/;"	c
 CPUMASK_ASSZERO	os/os-dragonfly.h	/^#define CPUMASK_ASSZERO(/;"	d
 CPUMASK_NANDBIT	os/os-dragonfly.h	/^#define CPUMASK_NANDBIT(/;"	d
@@ -360,6 +370,7 @@ DAIOCTRIM	os/os-dragonfly.h	/^#define DAIOCTRIM	/;"	d
 DDIR_DATASYNC	io_ddir.h	/^	DDIR_DATASYNC,$/;"	e	enum:fio_ddir
 DDIR_INVAL	io_ddir.h	/^	DDIR_INVAL = -1,$/;"	e	enum:fio_ddir
 DDIR_LAST	io_ddir.h	/^	DDIR_LAST,$/;"	e	enum:fio_ddir
+DDIR_LIST	install/bin/fio_jsonplus_clat2csv	/^DDIR_LIST = ['read', 'write', 'trim']$/;"	v
 DDIR_LIST	tools/fio_jsonplus_clat2csv	/^DDIR_LIST = ['read', 'write', 'trim']$/;"	v
 DDIR_READ	io_ddir.h	/^	DDIR_READ = 0,$/;"	e	enum:fio_ddir
 DDIR_RWDIR_CNT	io_ddir.h	/^	DDIR_RWDIR_CNT = 3,$/;"	e	enum:fio_ddir
@@ -380,6 +391,10 @@ DEF_PARETO_VAL	t/genzipf.c	/^#define DEF_PARETO_VAL	/;"	d	file:
 DEF_ZIPF_VAL	t/genzipf.c	/^#define DEF_ZIPF_VAL	/;"	d	file:
 DEPTH	t/io_uring.c	/^#define DEPTH	/;"	d	file:
 DESCRIPTION	fio.1	/^.SH DESCRIPTION$/;"	s	title:fio
+DESCRIPTION	install/man/man1/fio.1	/^.SH DESCRIPTION$/;"	s	title:fio
+DESCRIPTION	install/man/man1/fio2gnuplot.1	/^.SH DESCRIPTION$/;"	s	title:fio2gnuplot
+DESCRIPTION	install/man/man1/fio_generate_plots.1	/^.SH DESCRIPTION$/;"	s	title:FIO_GENERATE_PLOTS
+DESCRIPTION	install/man/man1/fiologparser_hist.py.1	/^.SH DESCRIPTION$/;"	s	title:fiologparser_hist.py
 DESCRIPTION	tools/fio_generate_plots.1	/^.SH DESCRIPTION$/;"	s	title:FIO_GENERATE_PLOTS
 DESCRIPTION	tools/hist/fiologparser_hist.py.1	/^.SH DESCRIPTION$/;"	s	title:fiologparser_hist.py
 DESCRIPTION	tools/plot/fio2gnuplot.1	/^.SH DESCRIPTION$/;"	s	title:fio2gnuplot
@@ -416,6 +431,10 @@ EOF	configure	/^  cat > $TMPC <<EOF$/;"	h
 EOF	configure	/^cat > $TMPC << EOF$/;"	h
 EOF	configure	/^cat > $TMPC <<EOF$/;"	h
 EOF	configure	/^cat > $TMPC2 << EOF$/;"	h
+EOF	install/bin/genfio	/^	cat << EOF$/;"	h
+EOF	install/bin/genfio	/^    cat >> $OUTFILE << EOF$/;"	h
+EOF	install/bin/genfio	/^cat >$TEMPLATE << EOF$/;"	h
+EOF	install/bin/genfio	/^cat >> $OUTFILE << EOF$/;"	h
 EOF	tools/genfio	/^	cat << EOF$/;"	h
 EOF	tools/genfio	/^    cat >> $OUTFILE << EOF$/;"	h
 EOF	tools/genfio	/^cat >$TEMPLATE << EOF$/;"	h
@@ -432,7 +451,9 @@ ERROR_TYPE_VERIFY_BIT	td_error.h	/^	ERROR_TYPE_VERIFY_BIT = 2,$/;"	e	enum:error_
 ERROR_TYPE_WRITE	td_error.h	/^        ERROR_TYPE_WRITE = 1 << ERROR_TYPE_WRITE_BIT,$/;"	e	enum:error_type
 ERROR_TYPE_WRITE_BIT	td_error.h	/^	ERROR_TYPE_WRITE_BIT = 1,$/;"	e	enum:error_type_bit
 ERR_PTR	err.h	/^static inline void *ERR_PTR(uintptr_t error)$/;"	f	typeref:typename:void *
+EXAMPLE	install/man/man1/fio2gnuplot.1	/^.SH EXAMPLE$/;"	s	title:fio2gnuplot
 EXAMPLE	tools/plot/fio2gnuplot.1	/^.SH EXAMPLE$/;"	s	title:fio2gnuplot
+EXAMPLES	install/man/man1/fiologparser_hist.py.1	/^.SH EXAMPLES$/;"	s	title:fiologparser_hist.py
 EXAMPLES	tools/hist/fiologparser_hist.py.1	/^.SH EXAMPLES$/;"	s	title:fiologparser_hist.py
 EXIT_SUCCESS	y.tab.c	/^#      define EXIT_SUCCESS /;"	d	file:
 EXIT_SUCCESS	y.tab.c	/^#    define EXIT_SUCCESS /;"	d	file:
@@ -440,6 +461,7 @@ EXT4_IOC_MOVE_EXT	engines/e4defrag.c	/^#define EXT4_IOC_MOVE_EXT /;"	d	file:
 Environment variables	HOWTO.rst	/^Environment variables$/;"	s	chapter:Job file format
 Error handling	HOWTO.rst	/^Error handling$/;"	s	chapter:Job file parameters
 Error handling	fio.1	/^.SS "Error handling"$/;"	S	section:fio""JOB PARAMETERS
+Error handling	install/man/man1/fio.1	/^.SS "Error handling"$/;"	S	section:fio""JOB PARAMETERS
 Examples	doc/fio_doc.rst	/^Examples$/;"	c
 ExecStart	tools/fio.service	/^ExecStart=\/usr\/bin\/fio --server$/;"	k	section:Service
 F1	crc/md5.h	/^#define F1(/;"	d
@@ -583,6 +605,7 @@ FIO_FSERVICE_SEQ	file.h	/^	FIO_FSERVICE_SEQ		= 3,$/;"	e	enum:__anonfd762ebb0103
 FIO_FSERVICE_SHIFT	file.h	/^	FIO_FSERVICE_SHIFT		= 10,$/;"	e	enum:__anonfd762ebb0103
 FIO_FSERVICE_ZIPF	file.h	/^	FIO_FSERVICE_ZIPF		= __FIO_FSERVICE_NONUNIFORM | 4,$/;"	e	enum:__anonfd762ebb0103
 FIO_GAUSS_H	lib/gauss.h	/^#define FIO_GAUSS_H$/;"	d
+FIO_GENERATE_PLOTS	install/man/man1/fio_generate_plots.1	/^.TH FIO_GENERATE_PLOTS 1 "May 19, 2009"$/;"	t
 FIO_GENERATE_PLOTS	tools/fio_generate_plots.1	/^.TH FIO_GENERATE_PLOTS 1 "May 19, 2009"$/;"	t
 FIO_GETOPT_IOENGINE	fio.h	/^#define FIO_GETOPT_IOENGINE	/;"	d
 FIO_GETOPT_JOB	fio.h	/^#define FIO_GETOPT_JOB	/;"	d
@@ -1092,6 +1115,7 @@ F_SET_FILE_RW_HINT	os/os-linux.h	/^#define F_SET_FILE_RW_HINT	/;"	d
 F_SET_RW_HINT	os/os-linux.h	/^#define F_SET_RW_HINT	/;"	d
 Fio Manpage	doc/fio_man.rst	/^Fio Manpage$/;"	H
 FioExeTest	t/run-fio-tests.py	/^class FioExeTest(FioTest):$/;"	c
+FioHistoLogExc	install/bin/fio-histo-log-pctiles.py	/^class FioHistoLogExc(Exception):$/;"	c
 FioHistoLogExc	tools/hist/fio-histo-log-pctiles.py	/^class FioHistoLogExc(Exception):$/;"	c
 FioJobTest	t/run-fio-tests.py	/^class FioJobTest(FioExeTest):$/;"	c
 FioJobTest_iops_rate	t/run-fio-tests.py	/^class FioJobTest_iops_rate(FioJobTest):$/;"	c
@@ -1209,6 +1233,7 @@ HP6	crc/sha512.c	/^#define HP6 /;"	d	file:
 HP7	crc/sha512.c	/^#define HP7 /;"	d	file:
 HWCAP_CRC32	os/os-linux.h	/^#define HWCAP_CRC32 /;"	d
 HWCAP_PMULL	os/os-linux.h	/^#define HWCAP_PMULL /;"	d
+HistFileRdr	install/bin/fiologparser_hist.py	/^class HistFileRdr():$/;"	c
 HistFileRdr	tools/hist/fiologparser_hist.py	/^class HistFileRdr():$/;"	c
 How fio works	HOWTO.rst	/^How fio works$/;"	c
 I	crc/sha256.c	/^static inline void BLEND_OP(int I, uint32_t *W)$/;"	z	function:BLEND_OP	typeref:typename:int	file:
@@ -1216,23 +1241,32 @@ I	crc/sha256.c	/^static inline void LOAD_OP(int I, uint32_t *W, const uint8_t *i
 I	crc/sha512.c	/^static inline void BLEND_OP(int I, uint64_t *W)$/;"	z	function:BLEND_OP	typeref:typename:int	file:
 I	crc/sha512.c	/^static inline void LOAD_OP(int I, uint64_t *W, const uint8_t *input)$/;"	z	function:LOAD_OP	typeref:typename:int	file:
 I/O REPLAY \\- MERGING TRACES	fio.1	/^.SH I\/O REPLAY \\- MERGING TRACES$/;"	s	title:fio
+I/O REPLAY \\- MERGING TRACES	install/man/man1/fio.1	/^.SH I\/O REPLAY \\- MERGING TRACES$/;"	s	title:fio
 I/O Replay - Merging Traces	HOWTO.rst	/^I\/O Replay - Merging Traces$/;"	c
 I/O depth	HOWTO.rst	/^I\/O depth$/;"	s	chapter:Job file parameters
 I/O depth	fio.1	/^.SS "I\/O depth"$/;"	S	section:fio""JOB PARAMETERS
+I/O depth	install/man/man1/fio.1	/^.SS "I\/O depth"$/;"	S	section:fio""JOB PARAMETERS
 I/O engine	HOWTO.rst	/^I\/O engine$/;"	s	chapter:Job file parameters
 I/O engine	fio.1	/^.SS "I\/O engine"$/;"	S	section:fio""JOB PARAMETERS
+I/O engine	install/man/man1/fio.1	/^.SS "I\/O engine"$/;"	S	section:fio""JOB PARAMETERS
 I/O engine specific parameters	HOWTO.rst	/^I\/O engine specific parameters$/;"	s	chapter:Job file parameters
 I/O engine specific parameters	fio.1	/^.SS "I\/O engine specific parameters"$/;"	S	section:fio""JOB PARAMETERS
+I/O engine specific parameters	install/man/man1/fio.1	/^.SS "I\/O engine specific parameters"$/;"	S	section:fio""JOB PARAMETERS
 I/O latency	HOWTO.rst	/^I\/O latency$/;"	s	chapter:Job file parameters
 I/O latency	fio.1	/^.SS "I\/O latency"$/;"	S	section:fio""JOB PARAMETERS
+I/O latency	install/man/man1/fio.1	/^.SS "I\/O latency"$/;"	S	section:fio""JOB PARAMETERS
 I/O rate	HOWTO.rst	/^I\/O rate$/;"	s	chapter:Job file parameters
 I/O rate	fio.1	/^.SS "I\/O rate"$/;"	S	section:fio""JOB PARAMETERS
+I/O rate	install/man/man1/fio.1	/^.SS "I\/O rate"$/;"	S	section:fio""JOB PARAMETERS
 I/O replay	HOWTO.rst	/^I\/O replay$/;"	s	chapter:Job file parameters
 I/O replay	fio.1	/^.SS "I\/O replay"$/;"	S	section:fio""JOB PARAMETERS
+I/O replay	install/man/man1/fio.1	/^.SS "I\/O replay"$/;"	S	section:fio""JOB PARAMETERS
 I/O size	HOWTO.rst	/^I\/O size$/;"	s	chapter:Job file parameters
 I/O size	fio.1	/^.SS "I\/O size"$/;"	S	section:fio""JOB PARAMETERS
+I/O size	install/man/man1/fio.1	/^.SS "I\/O size"$/;"	S	section:fio""JOB PARAMETERS
 I/O type	HOWTO.rst	/^I\/O type$/;"	s	chapter:Job file parameters
 I/O type	fio.1	/^.SS "I\/O type"$/;"	S	section:fio""JOB PARAMETERS
+I/O type	install/man/man1/fio.1	/^.SS "I\/O type"$/;"	S	section:fio""JOB PARAMETERS
 I18NSPHINXOPTS	doc/Makefile	/^I18NSPHINXOPTS  = $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .$/;"	m
 I18NSPHINXOPTS	doc/make.bat	/^	set I18NSPHINXOPTS=-D latex_paper_size=%PAPER% %I18NSPHINXOPTS%$/;"	v
 I18NSPHINXOPTS	doc/make.bat	/^set I18NSPHINXOPTS=%SPHINXOPTS% .$/;"	v
@@ -1476,16 +1510,21 @@ IoCompletionRoutine	engines/windowsaio.c	/^static DWORD WINAPI IoCompletionRouti
 IoCompletionRoutine	engines/windowsaio.c	/^static DWORD WINAPI IoCompletionRoutine(LPVOID lpParameter);$/;"	p	typeref:typename:DWORD WINAPI	file:
 JHASH_INITVAL	hash.h	/^#define JHASH_INITVAL	/;"	d
 JOB FILE FORMAT	fio.1	/^.SH "JOB FILE FORMAT"$/;"	s	title:fio
+JOB FILE FORMAT	install/man/man1/fio.1	/^.SH "JOB FILE FORMAT"$/;"	s	title:fio
 JOB FILE PARAMETERS	fio.1	/^.SH "JOB FILE PARAMETERS"$/;"	s	title:fio
+JOB FILE PARAMETERS	install/man/man1/fio.1	/^.SH "JOB FILE PARAMETERS"$/;"	s	title:fio
 JOB PARAMETERS	fio.1	/^.SH "JOB PARAMETERS"$/;"	s	title:fio
+JOB PARAMETERS	install/man/man1/fio.1	/^.SH "JOB PARAMETERS"$/;"	s	title:fio
 JOBS_ETA	stat.h	/^#define JOBS_ETA /;"	d
 JOBS_ETA	stat.h	/^struct jobs_eta JOBS_ETA;$/;"	v	typeref:struct:jobs_eta
 JOBS_ETA	stat.h	/^struct jobs_eta_packed JOBS_ETA __attribute__((packed));$/;"	v	typeref:struct:jobs_eta_packed
 JOBS_PER_SEG	fio.h	/^#define JOBS_PER_SEG	/;"	d
 JOB_START_TIMEOUT	backend.c	/^#define JOB_START_TIMEOUT	/;"	d	file:
 JSON OUTPUT	fio.1	/^.SH JSON OUTPUT$/;"	s	title:fio
+JSON OUTPUT	install/man/man1/fio.1	/^.SH JSON OUTPUT$/;"	s	title:fio
 JSON output	HOWTO.rst	/^JSON output$/;"	c
 JSON+ OUTPUT	fio.1	/^.SH JSON+ OUTPUT$/;"	s	title:fio
+JSON+ OUTPUT	install/man/man1/fio.1	/^.SH JSON+ OUTPUT$/;"	s	title:fio
 JSON+ output	HOWTO.rst	/^JSON+ output$/;"	c
 JSON_PARENT_TYPE_ARRAY	json.h	/^#define JSON_PARENT_TYPE_ARRAY /;"	d
 JSON_PARENT_TYPE_PAIR	json.h	/^#define JSON_PARENT_TYPE_PAIR /;"	d
@@ -1496,12 +1535,14 @@ JSON_TYPE_OBJECT	json.h	/^#define JSON_TYPE_OBJECT /;"	d
 JSON_TYPE_STRING	json.h	/^#define JSON_TYPE_STRING /;"	d
 Job description	HOWTO.rst	/^Job description$/;"	s	chapter:Job file parameters
 Job description	fio.1	/^.SS "Job description"$/;"	S	section:fio""JOB PARAMETERS
+Job description	install/man/man1/fio.1	/^.SS "Job description"$/;"	S	section:fio""JOB PARAMETERS
 Job file format	HOWTO.rst	/^Job file format$/;"	c
 Job file parameters	HOWTO.rst	/^Job file parameters$/;"	c
 KECCAK_ROUNDS	crc/sha3.c	/^#define KECCAK_ROUNDS /;"	d	file:
 LARGESMALLOC	t/stest.c	/^#define LARGESMALLOC	/;"	d	file:
 LAST_POS	engines/glusterfs_sync.c	/^#define LAST_POS(/;"	d	file:
 LAST_POS	engines/sync.c	/^#define LAST_POS(/;"	d	file:
+LAT_LIST	install/bin/fio_jsonplus_clat2csv	/^LAT_LIST = ['slat_ns', 'clat_ns', 'lat_ns']$/;"	v
 LAT_LIST	tools/fio_jsonplus_clat2csv	/^LAT_LIST = ['slat_ns', 'clat_ns', 'lat_ns']$/;"	v
 LAT_LOG_MASK	iolog.c	/^	LAT_LOG_MASK	= 2,$/;"	e	enum:__anona13017500103	file:
 LCG	lib/rand.c	/^#define LCG(/;"	d	file:
@@ -1525,6 +1566,7 @@ LLVMFuzzerTestOneInput	t/fuzz/onefile.c	/^int LLVMFuzzerTestOneInput(const uint8
 LOAD_OP	crc/sha256.c	/^static inline void LOAD_OP(int I, uint32_t *W, const uint8_t *input)$/;"	f	typeref:typename:void	file:
 LOAD_OP	crc/sha512.c	/^static inline void LOAD_OP(int I, uint64_t *W, const uint8_t *input)$/;"	f	typeref:typename:void	file:
 LOG FILE FORMATS	fio.1	/^.SH LOG FILE FORMATS$/;"	s	title:fio
+LOG FILE FORMATS	install/man/man1/fio.1	/^.SH LOG FILE FORMATS$/;"	s	title:fio
 LOGGED_BUFLEN_NOT_ALIGNED	engines/libcufile.c	/^#define LOGGED_BUFLEN_NOT_ALIGNED /;"	d	file:
 LOGGED_GPU_OFFSET_NOT_ALIGNED	engines/libcufile.c	/^#define LOGGED_GPU_OFFSET_NOT_ALIGNED /;"	d	file:
 LOG_ERROR	os/windows/posix/include/syslog.h	/^#define LOG_ERROR	/;"	d
@@ -1595,6 +1637,7 @@ MEM_SHMHUGE	thread_options.h	/^	MEM_SHMHUGE,	\/* use shared memory segments with
 MIN	oslib/libmtd_common.h	/^#define MIN(/;"	d
 MIN_TICKS	t/time-test.c	/^#define MIN_TICKS /;"	d	file:
 MMAP_TOTAL_SZ	engines/dev-dax.c	/^#define MMAP_TOTAL_SZ	/;"	d	file:
+MMAP_TOTAL_SZ	engines/mmap-anno.c	/^#define MMAP_TOTAL_SZ	/;"	d	file:
 MMAP_TOTAL_SZ	engines/mmap.c	/^#define MMAP_TOTAL_SZ	/;"	d	file:
 MPOL_LOCAL	fio.h	/^#define MPOL_LOCAL /;"	d
 MSG_WAITALL	os/os-hpux.h	/^#define MSG_WAITALL	/;"	d
@@ -1623,6 +1666,7 @@ Maj	crc/sha256.c	/^static inline uint32_t Maj(uint32_t x, uint32_t y, uint32_t z
 Maj	crc/sha512.c	/^static inline uint64_t Maj(uint64_t x, uint64_t y, uint64_t z)$/;"	f	typeref:typename:uint64_t	file:
 Measurements and reporting	HOWTO.rst	/^Measurements and reporting$/;"	s	chapter:Job file parameters
 Measurements and reporting	fio.1	/^.SS "Measurements and reporting"$/;"	S	section:fio""JOB PARAMETERS
+Measurements and reporting	install/man/man1/fio.1	/^.SS "Measurements and reporting"$/;"	S	section:fio""JOB PARAMETERS
 Moral License	doc/fio_doc.rst	/^Moral License$/;"	c
 N2S_BIT	lib/num2str.h	/^	N2S_BIT		= 3,$/;"	e	enum:n2s_unit
 N2S_BITPERSEC	lib/num2str.h	/^	N2S_BITPERSEC	= 5,$/;"	e	enum:n2s_unit
@@ -1631,6 +1675,10 @@ N2S_BYTEPERSEC	lib/num2str.h	/^	N2S_BYTEPERSEC	= 4,$/;"	e	enum:n2s_unit
 N2S_NONE	lib/num2str.h	/^	N2S_NONE	= 0,$/;"	e	enum:n2s_unit
 N2S_PERSEC	lib/num2str.h	/^	N2S_PERSEC	= 1,$/;"	e	enum:n2s_unit
 NAME	fio.1	/^.SH NAME$/;"	s	title:fio
+NAME	install/man/man1/fio.1	/^.SH NAME$/;"	s	title:fio
+NAME	install/man/man1/fio2gnuplot.1	/^.SH NAME$/;"	s	title:fio2gnuplot
+NAME	install/man/man1/fio_generate_plots.1	/^.SH NAME$/;"	s	title:FIO_GENERATE_PLOTS
+NAME	install/man/man1/fiologparser_hist.py.1	/^.SH NAME$/;"	s	title:fiologparser_hist.py
 NAME	tools/fio_generate_plots.1	/^.SH NAME$/;"	s	title:FIO_GENERATE_PLOTS
 NAME	tools/hist/fiologparser_hist.py.1	/^.SH NAME$/;"	s	title:fiologparser_hist.py
 NAME	tools/plot/fio2gnuplot.1	/^.SH NAME$/;"	s	title:fio2gnuplot
@@ -1641,6 +1689,7 @@ NETINET_TCP_H	os/windows/posix/include/netinet/tcp.h	/^#define NETINET_TCP_H$/;"
 NFS_READ_WRITE	engines/nfs.c	/^	NFS_READ_WRITE = 0,$/;"	e	enum:nfs_op_type	file:
 NFS_STAT_MKDIR_RMDIR	engines/nfs.c	/^	NFS_STAT_MKDIR_RMDIR,$/;"	e	enum:nfs_op_type	file:
 NFS_STAT_TOUCH_RM	engines/nfs.c	/^	NFS_STAT_TOUCH_RM,$/;"	e	enum:nfs_op_type	file:
+NOTES	install/man/man1/fiologparser_hist.py.1	/^.SH NOTES$/;"	s	title:fiologparser_hist.py
 NOTES	tools/hist/fiologparser_hist.py.1	/^.SH NOTES$/;"	s	title:fiologparser_hist.py
 NOT_YET	engines/glusterfs_async.c	/^#define NOT_YET /;"	d	file:
 NR_CHUNKS	crc/test.c	/^#define NR_CHUNKS	/;"	d	file:
@@ -1662,6 +1711,10 @@ OFFS64_IOCTLS_SUPPORTED	oslib/libmtd_int.h	/^#define OFFS64_IOCTLS_SUPPORTED /;"
 OFFS64_IOCTLS_UNKNOWN	oslib/libmtd_int.h	/^#define OFFS64_IOCTLS_UNKNOWN /;"	d
 OPTFLAGS	Makefile	/^OPTFLAGS= -g -ffast-math$/;"	m
 OPTIONS	fio.1	/^.SH OPTIONS$/;"	s	title:fio
+OPTIONS	install/man/man1/fio.1	/^.SH OPTIONS$/;"	s	title:fio
+OPTIONS	install/man/man1/fio2gnuplot.1	/^.SH OPTIONS$/;"	s	title:fio2gnuplot
+OPTIONS	install/man/man1/fio_generate_plots.1	/^.SH OPTIONS$/;"	s	title:FIO_GENERATE_PLOTS
+OPTIONS	install/man/man1/fiologparser_hist.py.1	/^.SH OPTIONS$/;"	s	title:fiologparser_hist.py
 OPTIONS	tools/fio_generate_plots.1	/^.SH OPTIONS$/;"	s	title:FIO_GENERATE_PLOTS
 OPTIONS	tools/hist/fiologparser_hist.py.1	/^.SH OPTIONS$/;"	s	title:fiologparser_hist.py
 OPTIONS	tools/plot/fio2gnuplot.1	/^.SH OPTIONS$/;"	s	title:fio2gnuplot
@@ -1687,6 +1740,7 @@ OS_O_DIRECT	os/os.h	/^#define OS_O_DIRECT	/;"	d
 OS_RAND_MAX	os/os-solaris.h	/^#define OS_RAND_MAX	/;"	d
 OS_RAND_MAX	os/os.h	/^#define OS_RAND_MAX	/;"	d
 OUTPUT	fio.1	/^.SH OUTPUT$/;"	s	title:fio
+OUTPUT	install/man/man1/fio.1	/^.SH OUTPUT$/;"	s	title:fio
 OUTPUT_CSV	t/genzipf.c	/^	OUTPUT_CSV,$/;"	e	enum:__anon632da9cc0203	file:
 OUTPUT_NORMAL	t/genzipf.c	/^	OUTPUT_NORMAL,$/;"	e	enum:__anon632da9cc0203	file:
 O_CLOEXEC	oslib/libmtd_common.h	/^#define O_CLOEXEC /;"	d
@@ -1699,6 +1753,7 @@ PAPER	doc/make.bat	/^	echo.  latex      to make LaTeX files, you can set PAPER=a
 PAPEROPT_a4	doc/Makefile	/^PAPEROPT_a4     = -D latex_paper_size=a4$/;"	m
 PAPEROPT_letter	doc/Makefile	/^PAPEROPT_letter = -D latex_paper_size=letter$/;"	m
 PARAMETER TYPES	fio.1	/^.SH "PARAMETER TYPES"$/;"	s	title:fio
+PARAMETER TYPES	install/man/man1/fio.1	/^.SH "PARAMETER TYPES"$/;"	s	title:fio
 PARSER_VALUE_TYPE	y.tab.c	/^} PARSER_VALUE_TYPE;$/;"	t	typeref:union:valtype	file:
 PARSE_MAX_VP	parse.h	/^#define PARSE_MAX_VP	/;"	d
 PID_HASH_BITS	t/btrace2fio.c	/^#define PID_HASH_BITS	/;"	d	file:
@@ -1782,6 +1837,8 @@ REAL_MAX_SEG	fio.h	/^#define REAL_MAX_SEG	/;"	d
 RECV_OFFSET	engines/librpma_gpspm.c	/^#define RECV_OFFSET /;"	d	file:
 REJECT	lex.yy.c	/^#define REJECT /;"	d	file:
 REPORTING BUGS	fio.1	/^.SH "REPORTING BUGS"$/;"	s	title:fio
+REPORTING BUGS	install/man/man1/fio.1	/^.SH "REPORTING BUGS"$/;"	s	title:fio
+REPORTING BUGS	install/man/man1/fiologparser_hist.py.1	/^.SH "REPORTING BUGS"$/;"	s	title:fiologparser_hist.py
 REPORTING BUGS	tools/hist/fiologparser_hist.py.1	/^.SH "REPORTING BUGS"$/;"	s	title:fiologparser_hist.py
 REX_PRE	crc/crc32c-intel.c	/^#define REX_PRE /;"	d	file:
 REX_PRE	crc/crc32c-intel.c	/^#define REX_PRE$/;"	d	file:
@@ -1820,6 +1877,7 @@ Reserved keywords	HOWTO.rst	/^Reserved keywords$/;"	s	chapter:Job file format
 Running fio	README.rst	/^Running fio$/;"	c
 Running predefined workloads	HOWTO.rst	/^Running predefined workloads$/;"	c
 Running predefined workloads	fio.1	/^.SS "Running predefined workloads"$/;"	S	section:fio""JOB PARAMETERS
+Running predefined workloads	install/man/man1/fio.1	/^.SS "Running predefined workloads"$/;"	S	section:fio""JOB PARAMETERS
 S	iolog.h	/^	fio_fp64_t S;$/;"	m	struct:io_stat	typeref:typename:fio_fp64_t
 SAMPLE_SEC	profiles/act.c	/^#define SAMPLE_SEC	/;"	d	file:
 SA_RESTART	os/os-windows.h	/^#define SA_RESTART	/;"	d
@@ -1827,6 +1885,7 @@ SCALE_F	crc/crc32c-intel.c	/^#define SCALE_F /;"	d	file:
 SCRIPTS	Makefile	/^SCRIPTS = $(addprefix $(SRCDIR)\/,tools\/fio_generate_plots tools\/plot\/fio2gnuplot tools\/genf/;"	m
 SCSI_TIMEOUT_MS	engines/sg.c	/^#define SCSI_TIMEOUT_MS /;"	d	file:
 SEE ALSO	fio.1	/^.SH "SEE ALSO"$/;"	s	title:fio
+SEE ALSO	install/man/man1/fio.1	/^.SH "SEE ALSO"$/;"	s	title:fio
 SEMAPHORE_H	os/windows/posix/include/semaphore.h	/^#define SEMAPHORE_H$/;"	d
 SEND_OFFSET	engines/librpma_gpspm.c	/^#define SEND_OFFSET /;"	d	file:
 SET_SWD	zbd.c	/^	SET_SWD,$/;"	e	enum:swd_action	file:
@@ -1906,6 +1965,10 @@ SW_F_EXIT	workqueue.c	/^	SW_F_EXIT	= 1 << 2,$/;"	e	enum:__anon5bcb2cde0103	file:
 SW_F_IDLE	workqueue.c	/^	SW_F_IDLE	= 1 << 0,$/;"	e	enum:__anon5bcb2cde0103	file:
 SW_F_RUNNING	workqueue.c	/^	SW_F_RUNNING	= 1 << 1,$/;"	e	enum:__anon5bcb2cde0103	file:
 SYNOPSIS	fio.1	/^.SH SYNOPSIS$/;"	s	title:fio
+SYNOPSIS	install/man/man1/fio.1	/^.SH SYNOPSIS$/;"	s	title:fio
+SYNOPSIS	install/man/man1/fio2gnuplot.1	/^.SH SYNOPSIS$/;"	s	title:fio2gnuplot
+SYNOPSIS	install/man/man1/fio_generate_plots.1	/^.SH SYNOPSIS$/;"	s	title:FIO_GENERATE_PLOTS
+SYNOPSIS	install/man/man1/fiologparser_hist.py.1	/^.SH SYNOPSIS$/;"	s	title:fiologparser_hist.py
 SYNOPSIS	tools/fio_generate_plots.1	/^.SH SYNOPSIS$/;"	s	title:FIO_GENERATE_PLOTS
 SYNOPSIS	tools/hist/fiologparser_hist.py.1	/^.SH SYNOPSIS$/;"	s	title:fiologparser_hist.py
 SYNOPSIS	tools/plot/fio2gnuplot.1	/^.SH SYNOPSIS$/;"	s	title:fio2gnuplot
@@ -1920,6 +1983,7 @@ SYS_UIO_H	os/windows/posix/include/sys/uio.h	/^#define SYS_UIO_H$/;"	d
 SYS_UN_H	os/windows/posix/include/sys/un.h	/^#define SYS_UN_H$/;"	d
 SYS_WAIT_H	os/windows/posix/include/sys/wait.h	/^#define SYS_WAIT_H$/;"	d
 S_ISSOCK	os/os-windows.h	/^#define S_ISSOCK(/;"	d
+Sample	install/bin/fiologparser.py	/^class Sample(object):$/;"	c
 Sample	tools/fiologparser.py	/^class Sample(object):$/;"	c
 Server TODO	doc/fio_doc.rst	/^Server TODO$/;"	s	chapter:TODO
 Service	tools/fio.service	/^[Service]$/;"	s
@@ -1929,6 +1993,7 @@ Sphinx	README.rst	/^.. _Sphinx: http:\/\/www.sphinx-doc.org$/;"	T	section:Docume
 Steady State TODO	doc/fio_doc.rst	/^Steady State TODO$/;"	s	chapter:TODO
 Steady state	HOWTO.rst	/^Steady state$/;"	s	chapter:Job file parameters
 Steady state	fio.1	/^.SS "Steady state"$/;"	S	section:fio""JOB PARAMETERS
+Steady state	install/man/man1/fio.1	/^.SS "Steady state"$/;"	S	section:fio""JOB PARAMETERS
 TAUSWORTHE	lib/rand.h	/^#define TAUSWORTHE(/;"	d
 TD_CREATED	fio.h	/^	TD_CREATED,$/;"	e	enum:__anon0f7035d92e03
 TD_DDIR_RAND	io_ddir.h	/^	TD_DDIR_RAND		= 1 << 2,$/;"	e	enum:td_ddir
@@ -1979,6 +2044,7 @@ TERMINATE_GROUP	fio.h	/^	TERMINATE_GROUP = 1,$/;"	e	enum:__anon0f7035d93503
 TERMINATE_NONE	fio.h	/^	TERMINATE_NONE = 0,$/;"	e	enum:__anon0f7035d93503
 TERMINATE_STONEWALL	fio.h	/^	TERMINATE_STONEWALL = 2,$/;"	e	enum:__anon0f7035d93503
 TERSE OUTPUT	fio.1	/^.SH TERSE OUTPUT$/;"	s	title:fio
+TERSE OUTPUT	install/man/man1/fio.1	/^.SH TERSE OUTPUT$/;"	s	title:fio
 TESTLEN	t/time-test.c	/^#define TESTLEN /;"	d	file:
 TEST_LIST	t/run-fio-tests.py	/^TEST_LIST = [$/;"	v
 THINKTIME_BLOCKS_TYPE_COMPLETE	fio.h	/^	THINKTIME_BLOCKS_TYPE_COMPLETE = 0,$/;"	e	enum:__anon0f7035d90503
@@ -1988,6 +2054,7 @@ TICKMARKS_H	tickmarks.h	/^#define TICKMARKS_H$/;"	d
 TODO	doc/fio_doc.rst	/^TODO$/;"	c
 TOOLTIP_DELTA	graph.c	/^#define TOOLTIP_DELTA	/;"	d	file:
 TRACE FILE FORMAT	fio.1	/^.SH TRACE FILE FORMAT$/;"	s	title:fio
+TRACE FILE FORMAT	install/man/man1/fio.1	/^.SH TRACE FILE FORMAT$/;"	s	title:fio
 TRACE_FIFO_SIZE	t/btrace2fio.c	/^#define TRACE_FIFO_SIZE	/;"	d	file:
 TSC_RATE_FILE	t/io_uring.c	/^#define TSC_RATE_FILE	/;"	d	file:
 TYPE_NONE	t/genzipf.c	/^	TYPE_NONE = 0,$/;"	e	enum:__anon632da9cc0103	file:
@@ -2054,7 +2121,9 @@ T_ZIPF_OBS	Makefile	/^T_ZIPF_OBS = t\/genzipf.o$/;"	m
 T_ZIPF_PROGS	Makefile	/^T_ZIPF_PROGS = t\/fio-genzipf$/;"	m
 Target file/device	HOWTO.rst	/^Target file\/device$/;"	s	chapter:Job file parameters
 Target file/device	fio.1	/^.SS "Target file\/device"$/;"	S	section:fio""JOB PARAMETERS
+Target file/device	install/man/man1/fio.1	/^.SS "Target file\/device"$/;"	S	section:fio""JOB PARAMETERS
 Terse output	HOWTO.rst	/^Terse output$/;"	c
+Test	install/bin/fio-histo-log-pctiles.py	/^  class Test(unittest2.TestCase):$/;"	c
 Test	tools/hist/fio-histo-log-pctiles.py	/^  class Test(unittest2.TestCase):$/;"	c
 Test001	t/latency_percentiles.py	/^class Test001(FioLatTest):$/;"	c
 Test002	t/latency_percentiles.py	/^class Test002(FioLatTest):$/;"	c
@@ -2075,12 +2144,16 @@ Test019	t/latency_percentiles.py	/^class Test019(FioLatTest):$/;"	c
 Test021	t/latency_percentiles.py	/^class Test021(FioLatTest):$/;"	c
 Threads, processes and job synchronization	HOWTO.rst	/^Threads, processes and job synchronization$/;"	s	chapter:Job file parameters
 Threads, processes and job synchronization	fio.1	/^.SS "Threads, processes and job synchronization"$/;"	S	section:fio""JOB PARAMETERS
+Threads, processes and job synchronization	install/man/man1/fio.1	/^.SS "Threads, processes and job synchronization"$/;"	S	section:fio""JOB PARAMETERS
 Time related parameters	HOWTO.rst	/^Time related parameters$/;"	s	chapter:Job file parameters
 Time related parameters	fio.1	/^.SS "Time related parameters"$/;"	S	section:fio""JOB PARAMETERS
+Time related parameters	install/man/man1/fio.1	/^.SS "Time related parameters"$/;"	S	section:fio""JOB PARAMETERS
+TimeSeries	install/bin/fiologparser.py	/^class TimeSeries(object):$/;"	c
 TimeSeries	tools/fiologparser.py	/^class TimeSeries(object):$/;"	c
 Time_tToSystemTime	os/windows/posix.c	/^void Time_tToSystemTime(time_t dosTime, SYSTEMTIME *systemTime)$/;"	f	typeref:typename:void
 Tiobench profile options	HOWTO.rst	/^Tiobench profile options$/;"	s	chapter:Running predefined workloads
 Tiobench profile options	fio.1	/^.SS "Tiobench profile options"$/;"	S	section:fio""JOB PARAMETERS
+Tiobench profile options	install/man/man1/fio.1	/^.SS "Tiobench profile options"$/;"	S	section:fio""JOB PARAMETERS
 Trace file format	HOWTO.rst	/^Trace file format$/;"	c
 Trace file format v1	HOWTO.rst	/^Trace file format v1$/;"	s	chapter:Trace file format
 Trace file format v2	HOWTO.rst	/^Trace file format v2$/;"	s	chapter:Trace file format
@@ -2108,7 +2181,9 @@ UT_TARGET_OBJS	Makefile	/^UT_TARGET_OBJS =$/;"	m
 Unit	tools/fio.service	/^[Unit]$/;"	s
 Units	HOWTO.rst	/^Units$/;"	s	chapter:Job file parameters
 Units	fio.1	/^.SS "Units"$/;"	S	section:fio""JOB PARAMETERS
+Units	install/man/man1/fio.1	/^.SS "Units"$/;"	S	section:fio""JOB PARAMETERS
 VERIFICATION AND TRIGGERS	fio.1	/^.SH VERIFICATION AND TRIGGERS$/;"	s	title:fio
+VERIFICATION AND TRIGGERS	install/man/man1/fio.1	/^.SH VERIFICATION AND TRIGGERS$/;"	s	title:fio
 VERIFY_CRC16	verify.h	/^	VERIFY_CRC16,			\/* crc16 sum data blocks *\/$/;"	e	enum:__anond2577e300103
 VERIFY_CRC32	verify.h	/^	VERIFY_CRC32,			\/* crc32 sum data blocks *\/$/;"	e	enum:__anond2577e300103
 VERIFY_CRC32C	verify.h	/^	VERIFY_CRC32C,			\/* crc32c sum data blocks *\/$/;"	e	enum:__anond2577e300103
@@ -2133,6 +2208,7 @@ VPATH	Makefile	/^VPATH := $(SRCDIR)$/;"	m
 VSTATE_HDR_VERSION	verify-state.h	/^#define VSTATE_HDR_VERSION	/;"	d
 Verification	HOWTO.rst	/^Verification$/;"	s	chapter:Job file parameters
 Verification	fio.1	/^.SS "Verification"$/;"	S	section:fio""JOB PARAMETERS
+Verification	install/man/man1/fio.1	/^.SS "Verification"$/;"	S	section:fio""JOB PARAMETERS
 Verification and triggers	HOWTO.rst	/^Verification and triggers$/;"	c
 Verification trigger example	HOWTO.rst	/^Verification trigger example$/;"	s	chapter:Verification and triggers
 W	crc/sha1.c	/^#define W(/;"	d	file:
@@ -2467,6 +2543,7 @@ __FIO_SS_PCT	steadystate.h	/^	__FIO_SS_PCT,$/;"	e	enum:__anon3e5d79660503
 __FIO_SS_RAMP_OVER	steadystate.h	/^	__FIO_SS_RAMP_OVER,$/;"	e	enum:__anon3e5d79660503
 __FIO_SS_SLOPE	steadystate.h	/^	__FIO_SS_SLOPE,$/;"	e	enum:__anon3e5d79660503
 __GCC4_has_attribute___fallthrough__	compiler/compiler.h	/^#define __GCC4_has_attribute___fallthrough__	/;"	d
+__HIST_COLUMNS	install/bin/fiologparser_hist.py	/^__HIST_COLUMNS = 1216$/;"	v
 __HIST_COLUMNS	tools/hist/fiologparser_hist.py	/^__HIST_COLUMNS = 1216$/;"	v
 __JSON__H	json.h	/^#define __JSON__H$/;"	d
 __LFSR_NEXT	lib/lfsr.c	/^#define __LFSR_NEXT(/;"	d	file:
@@ -2475,6 +2552,7 @@ __LIBMTD_INT_H__	oslib/libmtd_int.h	/^#define __LIBMTD_INT_H__$/;"	d
 __MTD_UTILS_COMMON_H__	oslib/libmtd_common.h	/^#define __MTD_UTILS_COMMON_H__$/;"	d
 __MTD_UTILS_XALLOC_H__	oslib/libmtd_xalloc.h	/^#define __MTD_UTILS_XALLOC_H__$/;"	d
 __NON_FATAL_ERR	td_error.c	/^static int __NON_FATAL_ERR[] = { EIO, EILSEQ };$/;"	v	typeref:typename:int[]	file:
+__NON_HIST_COLUMNS	install/bin/fiologparser_hist.py	/^__NON_HIST_COLUMNS = 3$/;"	v
 __NON_HIST_COLUMNS	tools/hist/fiologparser_hist.py	/^__NON_HIST_COLUMNS = 3$/;"	v
 __NR_fadvise64	os/os-linux-syscall.h	/^#define __NR_fadvise64	/;"	d
 __NR_io_uring_enter	arch/arch.h	/^#  define __NR_io_uring_enter	/;"	d
@@ -2512,6 +2590,7 @@ __TD_F_TRIM_BACKLOG	fio.h	/^	__TD_F_TRIM_BACKLOG,$/;"	e	enum:__anon0f7035d90203
 __TD_F_VER_BACKLOG	fio.h	/^	__TD_F_VER_BACKLOG	= 0,$/;"	e	enum:__anon0f7035d90203
 __TD_F_VSTATE_SAVED	fio.h	/^	__TD_F_VSTATE_SAVED,$/;"	e	enum:__anon0f7035d90203
 __THREAD_RUNSTR_SZ	stat.h	/^#define __THREAD_RUNSTR_SZ(/;"	d
+__TOTAL_COLUMNS	install/bin/fiologparser_hist.py	/^__TOTAL_COLUMNS = __HIST_COLUMNS + __NON_HIST_COLUMNS$/;"	v
 __TOTAL_COLUMNS	tools/hist/fiologparser_hist.py	/^__TOTAL_COLUMNS = __HIST_COLUMNS + __NON_HIST_COLUMNS$/;"	v
 __add_bs	t/btrace2fio.c	/^static void __add_bs(struct btrace_out *o, unsigned int len, int rw)$/;"	f	typeref:typename:void	file:
 __add_log_sample	stat.c	/^static void __add_log_sample(struct io_log *iolog, union io_sample_data data,$/;"	f	typeref:typename:void	file:
@@ -3348,6 +3427,9 @@ __hash_u64	hash.h	/^static inline uint64_t __hash_u64(uint64_t val)$/;"	f	typere
 __hdr_size	verify.c	/^static inline unsigned int __hdr_size(int verify_type)$/;"	f	typeref:typename:unsigned int	file:
 __ilog2	arch/arch-ppc.h	/^static inline int __ilog2(unsigned long bitmask)$/;"	f	typeref:typename:int
 __inflight_add	t/btrace2fio.c	/^static void __inflight_add(struct inflight *i)$/;"	f	typeref:typename:void	file:
+__init__	install/bin/fiologparser.py	/^    def __init__(self, ctx, fn):$/;"	m	class:TimeSeries
+__init__	install/bin/fiologparser.py	/^    def __init__(self, ctx, start, end, value):$/;"	m	class:Sample
+__init__	install/bin/fiologparser_hist.py	/^    def __init__(self, file):$/;"	m	class:HistFileRdr
 __init__	t/latency_percentiles.py	/^    def __init__(self, artifact_root, test_options, debug):$/;"	m	class:FioLatTest
 __init__	t/run-fio-tests.py	/^    def __init__(self, exe_path, parameters, success):$/;"	m	class:FioExeTest
 __init__	t/run-fio-tests.py	/^    def __init__(self, exe_path, parameters, success):$/;"	m	class:FioTest
@@ -3473,6 +3555,7 @@ _out_str	lex.yy.c	/^void yyset_out  ( FILE * _out_str  );$/;"	z	prototype:yyset_
 _out_str	lex.yy.c	/^void yyset_out (FILE *  _out_str )$/;"	z	function:yyset_out	typeref:typename:FILE *	file:
 _pad	engines/xnvme.c	/^	uint8_t _pad[24];$/;"	m	struct:xnvme_fioe_fwrap	typeref:typename:uint8_t[24]	file:
 _pad	engines/xnvme.c	/^	uint8_t _pad[8];$/;"	m	struct:xnvme_fioe_data	typeref:typename:uint8_t[8]	file:
+_plat_idx_to_val	install/bin/fiologparser_hist.py	/^def _plat_idx_to_val(idx, edge=0.5, FIO_IO_U_PLAT_BITS=6, FIO_IO_U_PLAT_VAL=64):$/;"	f
 _plat_idx_to_val	tools/hist/fiologparser_hist.py	/^def _plat_idx_to_val(idx, edge=0.5, FIO_IO_U_PLAT_BITS=6, FIO_IO_U_PLAT_VAL=64):$/;"	f
 _root	t/run-fio-tests.py	/^    _root = False$/;"	v	class:Requirements
 _uint32_t_S	crc/xxhash.c	/^typedef struct _uint32_t_S { uint32_t v; } _PACKED uint32_t_S;$/;"	s	file:
@@ -3588,6 +3671,7 @@ add_pool	smalloc.c	/^static bool add_pool(struct pool *pool, unsigned int alloc_
 add_profile_options	profile.c	/^static int add_profile_options(struct profile_ops *ops)$/;"	f	typeref:typename:int	file:
 add_recent_file_items	gfio.c	/^static void add_recent_file_items(struct gui *ui)$/;"	f	typeref:typename:void	file:
 add_reply	server.c	/^static void add_reply(uint64_t tag, struct flist_head *list)$/;"	f	typeref:typename:void	file:
+add_sample	install/bin/fiologparser.py	/^    def add_sample(self, start, end, value):$/;"	m	class:TimeSeries
 add_sample	tools/fiologparser.py	/^    def add_sample(self, start, end, value):$/;"	m	class:TimeSeries
 add_slat_sample	stat.c	/^void add_slat_sample(struct thread_data *td, enum fio_ddir ddir,$/;"	f	typeref:typename:void
 add_slat_sample	stat.h	/^extern void add_slat_sample(struct thread_data *, enum fio_ddir, unsigned long long,$/;"	p	typeref:typename:void
@@ -3600,6 +3684,7 @@ add_thread_segment	init.c	/^static int add_thread_segment(void)$/;"	f	typeref:ty
 add_tm_text	graph.c	/^	double minx, double maxx, int nticks, int add_tm_text)$/;"	z	function:graph_draw_x_ticks	typeref:typename:int	file:
 add_tm_text	graph.c	/^	double miny, double maxy, int nticks, int add_tm_text)$/;"	z	function:graph_draw_y_ticks	typeref:typename:int	file:
 add_to_dump_list	parse.c	/^static void add_to_dump_list(const struct fio_option *o,$/;"	f	typeref:typename:void	file:
+add_to_histo_from	install/bin/fio-histo-log-pctiles.py	/^def add_to_histo_from( target, source ):$/;"	f
 add_to_histo_from	tools/hist/fio-histo-log-pctiles.py	/^def add_to_histo_from( target, source ):$/;"	f
 add_to_lopt	options.c	/^static void add_to_lopt(struct option *lopt, struct fio_option *o,$/;"	f	typeref:typename:void	file:
 addr	client.h	/^		struct sockaddr_in addr;$/;"	m	union:fio_client::__anon4f09d8da020a	typeref:struct:sockaddr_in
@@ -3667,6 +3752,7 @@ alias	parse.h	/^	const char *alias;		\/* possible old allowed name *\/$/;"	m	str
 align	crc/xxhash.c	/^static uint32_t XXH32_endian_align(const void* input, int len, uint32_t seed, XXH_endianess endi/;"	z	function:XXH32_endian_align	typeref:typename:XXH_alignment	file:
 align	crc/xxhash.c	/^static uint32_t XXH_readLE32_align(const uint32_t* ptr, XXH_endianess endian, XXH_alignment alig/;"	z	function:XXH_readLE32_align	typeref:typename:XXH_alignment	file:
 align_footer	lib/memalign.c	/^struct align_footer {$/;"	s	file:
+align_histo_log	install/bin/fio-histo-log-pctiles.py	/^def align_histo_log(raw_histogram_log, time_quantum, bucket_count, min_timestamp_ms, max_timesta/;"	f
 align_histo_log	tools/hist/fio-histo-log-pctiles.py	/^def align_histo_log(raw_histogram_log, time_quantum, bucket_count, min_timestamp_ms, max_timesta/;"	f
 alignment	cairo_text_helpers.c	/^			       double fontsize, const char *text, int alignment)$/;"	z	function:draw_aligned_text	typeref:typename:int	file:
 alignment	fio.h	/^static inline void *fio_memalign(size_t alignment, size_t size, bool shared)$/;"	z	function:fio_memalign	typeref:typename:size_t	file:
@@ -3760,6 +3846,7 @@ arch_x86_64	arch/arch.h	/^	arch_x86_64 = 1,$/;"	e	enum:__anon5399c5260103
 arg	engines/rados.c	/^static void complete_callback(rados_completion_t cb, void *arg)$/;"	z	function:complete_callback	typeref:typename:void *	file:
 arg	gfio.c	/^static void *job_thread(void *arg)$/;"	z	function:job_thread	typeref:typename:void *	file:
 arg	gfio.c	/^static void *server_thread(void *arg)$/;"	z	function:server_thread	typeref:typename:void *	file:
+arg	install/bin/fiologparser_hist.py	/^    arg = p.add_argument$/;"	v
 arg	json.c	/^			       const struct json_value *arg)$/;"	z	function:json_object_add_value_type	typeref:typename:const struct json_value *	file:
 arg	json.c	/^			      const struct json_value *arg)$/;"	z	function:json_array_add_value_type	typeref:typename:const struct json_value *	file:
 arg	server.c	/^void fio_server_internal_set(const char *arg)$/;"	z	function:fio_server_internal_set	typeref:typename:const char *	file:
@@ -3845,6 +3932,7 @@ array	json.h	/^int json_array_add_value_type(struct json_array *array,$/;"	z	pro
 array	os/linux/io_uring.h	/^	__u32 array;$/;"	m	struct:io_sqring_offsets	typeref:typename:__u32
 array	stat.c	/^		struct disk_util_agg *agg, struct json_array *array)$/;"	z	function:json_array_add_disk_util	typeref:struct:json_array *	file:
 array	t/io_uring.c	/^	unsigned *array;$/;"	m	struct:io_sq_ring	typeref:typename:unsigned *	file:
+array_collapser	install/bin/fiologparser.py	/^array_collapser = lambda vlist, val:  my_extend(vlist, val) $/;"	f
 array_collapser	tools/fiologparser.py	/^array_collapser = lambda vlist, val:  my_extend(vlist, val) $/;"	f
 asprintf	oslib/asprintf.c	/^int asprintf(char **strp, const char *fmt, ...)$/;"	f	typeref:typename:int
 asprintf	oslib/asprintf.h	/^int asprintf(char **strp, const char *fmt, ...);$/;"	p	typeref:typename:int
@@ -3859,6 +3947,7 @@ aton	engines/rdma.c	/^static int aton(struct thread_data *td, const char *host,$
 attr	oslib/linux-blkzoned.c	/^static char *blkzoned_get_sysfs_attr(const char *file_name, const char *attr)$/;"	z	function:blkzoned_get_sysfs_attr	typeref:typename:const char *	file:
 author	doc/conf.py	/^author = 'Jens Axboe <axboe@kernel.dk>'$/;"	v
 aux_path	init.c	/^char *aux_path = NULL;$/;"	v	typeref:typename:char *
+average	install/bin/fio2gnuplot	/^def average(s): return sum(s) * 1.0 \/ len(s)$/;"	f
 average	tools/plot/fio2gnuplot	/^def average(s): return sum(s) * 1.0 \/ len(s)$/;"	f
 avg_last	iolog.h	/^	unsigned long avg_last[DDIR_RWDIR_CNT];$/;"	m	struct:io_log	typeref:typename:unsigned long[]
 avg_msec	iolog.h	/^	unsigned long avg_msec;$/;"	m	struct:io_log	typeref:typename:unsigned long
@@ -4005,6 +4094,7 @@ bg	graph.c	/^void graph_x_title(struct graph *bg, const char *title)$/;"	z	funct
 bg	graph.c	/^void graph_y_title(struct graph *bg, const char *title)$/;"	z	function:graph_y_title	typeref:struct:graph *	file:
 bg	graph.h	/^void graph_free(struct graph *bg);$/;"	z	prototype:graph_free	typeref:struct:graph *	file:
 bigendian	server.h	/^	uint8_t bigendian;$/;"	m	struct:cmd_probe_reply_pdu	typeref:typename:uint8_t
+bin_vals	install/bin/fiologparser_hist.py	/^bin_vals = []$/;"	v
 bin_vals	tools/hist/fiologparser_hist.py	/^bin_vals = []$/;"	v
 bind_sock	server.c	/^static char *bind_sock;$/;"	v	typeref:typename:char *	file:
 bindir	Makefile	/^bindir = $(prefix)\/bin$/;"	m
@@ -4598,6 +4688,7 @@ check_log	t/zbd/test-zbd-support	/^check_log() {$/;"	f
 check_merges	t/btrace2fio.c	/^static void check_merges(struct btrace_pid *p, struct flist_head *pidlist)$/;"	f	typeref:typename:void	file:
 check_min_lib_version	configure	/^check_min_lib_version() {$/;"	f
 check_min_rate	backend.c	/^static bool check_min_rate(struct thread_data *td, struct timespec *now)$/;"	f	typeref:typename:bool	file:
+check_mode_order	install/bin/genfio	/^check_mode_order() {$/;"	f
 check_mode_order	tools/genfio	/^check_mode_order() {$/;"	f
 check_mount_writes	backend.c	/^static bool check_mount_writes(struct thread_data *td)$/;"	f	typeref:typename:bool	file:
 check_next_free	t/axmap.c	/^static int check_next_free(struct axmap *map, uint64_t start, uint64_t expected)$/;"	f	typeref:typename:int	file:
@@ -4848,6 +4939,7 @@ clockid_t	os/os-mac.h	/^typedef unsigned int clockid_t;$/;"	t	typeref:typename:u
 clockid_t	os/windows/posix.h	/^typedef int clockid_t;$/;"	t	typeref:typename:int
 clocksource	thread_options.h	/^	enum fio_cs clocksource;$/;"	m	struct:thread_options	typeref:enum:fio_cs
 clocksource	thread_options.h	/^	uint32_t clocksource;$/;"	m	struct:thread_options_pack	typeref:typename:uint32_t
+close	install/bin/fiologparser_hist.py	/^    def close(self):$/;"	m	class:HistFileRdr
 close	tools/hist/fiologparser_hist.py	/^    def close(self):$/;"	m	class:HistFileRdr
 close_and_free_files	file.h	/^extern void close_and_free_files(struct thread_data *);$/;"	p	typeref:typename:void
 close_and_free_files	filesetup.c	/^void close_and_free_files(struct thread_data *td)$/;"	f	typeref:typename:void
@@ -4989,6 +5081,7 @@ collapse_entries	t/btrace2fio.c	/^static unsigned int collapse_entries = 0;$/;"	
 collision_check	t/dedupe.c	/^static unsigned int collision_check;$/;"	v	typeref:typename:unsigned int	file:
 color	lib/rbtree.c	/^ color:$/;"	L	function:rb_erase	file:
 color	lib/rbtree.h	/^static inline void rb_set_color(struct fio_rb_node *rb, int color)$/;"	z	function:rb_set_color	typeref:typename:int	file:
+columns	install/bin/fiologparser_hist.py	/^columns = None$/;"	v
 columns	tools/hist/fiologparser_hist.py	/^columns = None$/;"	v
 combo	gfio.c	/^	GtkWidget *combo;$/;"	m	struct:connection_widgets	typeref:typename:GtkWidget *	file:
 combo	goptions.c	/^	GtkWidget *combo;$/;"	m	struct:gopt_combo	typeref:typename:GtkWidget *	file:
@@ -5010,8 +5103,10 @@ common_print_version	oslib/libmtd_common.h	/^#define common_print_version(/;"	d
 comp	engines/rbd.c	/^static void _fio_rbd_finish_aiocb(rbd_completion_t comp, void *data)$/;"	z	function:_fio_rbd_finish_aiocb	typeref:typename:rbd_completion_t	file:
 comp_time	backend.c	/^		   struct timespec *comp_time)$/;"	z	function:io_queue_event	typeref:struct:timespec *	file:
 comp_time	fio.h	/^		   struct timespec *comp_time);$/;"	z	prototype:io_queue_event	typeref:struct:timespec *	file:
+compare_2_floats	install/bin/fio-histo-log-pctiles.py	/^    def compare_2_floats(self, x, y):$/;"	m	class:Test
 compare_2_floats	tools/hist/fio-histo-log-pctiles.py	/^    def compare_2_floats(self, x, y):$/;"	m	class:Test
 compare_block_infos	stat.c	/^static int compare_block_infos(const void *bs1, const void *bs2)$/;"	f	typeref:typename:int	file:
+compare_buckets	install/bin/fio-histo-log-pctiles.py	/^        compare_buckets = lambda k: self.compare_2_floats(buckets[k], buckets_expected[k])$/;"	f	member:Test.is_close	file:
 compare_buckets	tools/hist/fio-histo-log-pctiles.py	/^        compare_buckets = lambda k: self.compare_2_floats(buckets[k], buckets_expected[k])$/;"	f	member:Test.is_close	file:
 compare_recent_items	gfio.c	/^static gint compare_recent_items(GtkRecentInfo *a, GtkRecentInfo *b)$/;"	f	typeref:typename:gint	file:
 compat_features	engines/libaio.c	/^	unsigned compat_features;$/;"	m	struct:aio_ring	typeref:typename:unsigned	file:
@@ -5037,10 +5132,14 @@ compress_percentage	thread_options.h	/^	unsigned int compress_percentage;$/;"	m	
 compressed	server.h	/^	uint32_t compressed;$/;"	m	struct:cmd_iolog_pdu	typeref:typename:uint32_t
 compression	t/dedupe.c	/^static unsigned int compression = 0;$/;"	v	typeref:typename:unsigned int	file:
 comps	verify-state.h	/^	struct file_comp comps[0];$/;"	m	struct:thread_io_list	typeref:struct:file_comp[0]
+compute_aggregated_file	install/bin/fio2gnuplot	/^def compute_aggregated_file(fio_data_file, gnuplot_output_filename, gnuplot_output_dir):$/;"	f
 compute_aggregated_file	tools/plot/fio2gnuplot	/^def compute_aggregated_file(fio_data_file, gnuplot_output_filename, gnuplot_output_dir):$/;"	f
+compute_math	install/bin/fio2gnuplot	/^def compute_math(fio_data_file, title,gnuplot_output_filename,gnuplot_output_dir,mode,disk_perf,/;"	f
 compute_math	tools/plot/fio2gnuplot	/^def compute_math(fio_data_file, title,gnuplot_output_filename,gnuplot_output_dir,mode,disk_perf,/;"	f
 compute_nb_threads	t/one-core-peak.sh	/^compute_nb_threads() {$/;"	f
+compute_percentiles_from_logs	install/bin/fio-histo-log-pctiles.py	/^def compute_percentiles_from_logs():$/;"	f
 compute_percentiles_from_logs	tools/hist/fio-histo-log-pctiles.py	/^def compute_percentiles_from_logs():$/;"	f
+compute_temp_file	install/bin/fio2gnuplot	/^def compute_temp_file(fio_data_file,disk_perf,gnuplot_output_dir, min_time, max_time):$/;"	f
 compute_temp_file	tools/plot/fio2gnuplot	/^def compute_temp_file(fio_data_file,disk_perf,gnuplot_output_dir, min_time, max_time):$/;"	f
 cond	fio_sem.h	/^	pthread_cond_t cond;$/;"	m	struct:fio_sem	typeref:typename:pthread_cond_t
 cond	idletime.h	/^	pthread_cond_t  cond;$/;"	m	struct:idle_prof_thread	typeref:typename:pthread_cond_t
@@ -5278,6 +5377,7 @@ ctx	crc/sha1.c	/^void fio_sha1_init(struct fio_sha1_ctx *ctx)$/;"	z	function:fio
 ctx	crc/sha1.c	/^void fio_sha1_update(struct fio_sha1_ctx *ctx, const void *data,$/;"	z	function:fio_sha1_update	typeref:struct:fio_sha1_ctx *	file:
 ctx	engines/xnvme.c	/^static void cb_pool(struct xnvme_cmd_ctx *ctx, void *cb_arg)$/;"	z	function:cb_pool	typeref:struct:xnvme_cmd_ctx *	file:
 ctx	gfio.c	/^static void drag_and_drop_received(GtkWidget *widget, GdkDragContext *ctx,$/;"	z	function:drag_and_drop_received	typeref:typename:GdkDragContext *	file:
+ctx	install/bin/fiologparser.py	/^    ctx = parse_args()$/;"	v
 ctx	stat.h	/^	uint64_t ctx;$/;"	m	struct:thread_stat	typeref:typename:uint64_t
 ctx	tools/fiologparser.py	/^    ctx = parse_args()$/;"	v
 cu_ctx	fio.h	/^	CUcontext cu_ctx;$/;"	m	struct:thread_data	typeref:typename:CUcontext
@@ -5288,8 +5388,11 @@ cufile_initialized	engines/libcufile.c	/^static int cufile_initialized = 0;$/;"	
 cuid	os/windows/posix/include/sys/shm.h	/^	uid_t    cuid;   \/* creator's user ID *\/$/;"	m	struct:ipc_perm	typeref:typename:uid_t
 cur	engines/xnvme.c	/^	int32_t cur;$/;"	m	struct:xnvme_fioe_data	typeref:typename:int32_t	file:
 cur	lib/prio_tree.h	/^	struct prio_tree_node	*cur;$/;"	m	struct:prio_tree_iter	typeref:struct:prio_tree_node *
+curBins	install/bin/fiologparser_hist.py	/^    def curBins(self):$/;"	m	class:HistFileRdr
 curBins	tools/hist/fiologparser_hist.py	/^    def curBins(self):$/;"	m	class:HistFileRdr
+curDir	install/bin/fiologparser_hist.py	/^    def curDir(self):$/;"	m	class:HistFileRdr
 curDir	tools/hist/fiologparser_hist.py	/^    def curDir(self):$/;"	m	class:HistFileRdr
+curTS	install/bin/fiologparser_hist.py	/^    def curTS(self):$/;"	m	class:HistFileRdr
 curTS	tools/hist/fiologparser_hist.py	/^    def curTS(self):$/;"	m	class:HistFileRdr
 cur_commit	engines/ime.c	/^	unsigned int cur_commit;	\/* index of the first uncommitted req *\/$/;"	m	struct:ime_data	typeref:typename:unsigned int	file:
 cur_depth	fio.h	/^	unsigned int cur_depth;$/;"	m	struct:thread_data	typeref:typename:unsigned int
@@ -5624,6 +5727,7 @@ debug_init	t/debug.c	/^void debug_init(void)$/;"	f	typeref:typename:void
 debug_init	t/debug.h	/^extern void debug_init(void);$/;"	p	typeref:typename:void
 debug_level	debug.h	/^struct debug_level {$/;"	s
 debug_levels	init.c	/^const struct debug_level debug_levels[] = {$/;"	v	typeref:typename:const struct debug_level[]
+debug_print	install/bin/fio_jsonplus_clat2csv	/^def debug_print(debug, *args):$/;"	f
 debug_print	tools/fio_jsonplus_clat2csv	/^def debug_print(debug, *args):$/;"	f
 dedupe_check	t/dedupe.c	/^static int dedupe_check(const char *filename, uint64_t *nextents,$/;"	f	typeref:typename:int	file:
 dedupe_global	thread_options.h	/^	uint32_t dedupe_global;$/;"	m	struct:thread_options_pack	typeref:typename:uint32_t
@@ -5762,11 +5866,14 @@ digest_sz	crc/sha3.c	/^static void fio_sha3_init(struct fio_sha3_ctx *sctx, unsi
 dir	profiles/tiobench.c	/^	char *dir;$/;"	m	struct:tiobench_options	typeref:typename:char *	file:
 dir	profiles/tiobench.c	/^static char *dir;$/;"	v	typeref:typename:char *	file:
 dir_idx	profiles/tiobench.c	/^static char sz_idx[80], bs_idx[80], loop_idx[80], dir_idx[80], t_idx[80];$/;"	v	typeref:typename:char[80]	file:
+dir_map	install/bin/fiologparser_hist.py	/^dir_map = ['r', 'w', 't']  # map of directional value in log to textual representation$/;"	v
 dir_map	tools/hist/fiologparser_hist.py	/^dir_map = ['r', 'w', 't']  # map of directional value in log to textual representation$/;"	v
 direct_write_to_pmem	engines/librpma_fio.h	/^	uint8_t direct_write_to_pmem; \/* Direct Write to PMem is possible *\/$/;"	m	struct:librpma_fio_workspace	typeref:typename:uint8_t
 direct_write_to_pmem	engines/librpma_fio.h	/^	unsigned int direct_write_to_pmem;$/;"	m	struct:librpma_fio_options_values	typeref:typename:unsigned int
 directio	os/os-solaris.h	/^extern int directio(int, int);$/;"	p	typeref:typename:int
+direction_read	install/bin/fio-histo-log-pctiles.py	/^direction_read = 0$/;"	v
 direction_read	tools/hist/fio-histo-log-pctiles.py	/^direction_read = 0$/;"	v
+direction_write	install/bin/fio-histo-log-pctiles.py	/^direction_write = 1$/;"	v
 direction_write	tools/hist/fio-histo-log-pctiles.py	/^direction_write = 1$/;"	v
 directory	engines/libhdfs.c	/^	char *directory;$/;"	m	struct:hdfsio_options	typeref:typename:char *	file:
 directory	thread_options.h	/^	char *directory;$/;"	m	struct:thread_options	typeref:typename:char *
@@ -5816,6 +5923,7 @@ disk_util_sem	diskutil.c	/^static struct fio_sem *disk_util_sem;$/;"	v	typeref:s
 disk_util_stat	diskutil.h	/^struct disk_util_stat {$/;"	s
 disk_util_stats	diskutil.h	/^struct disk_util_stats {$/;"	s
 disk_util_vbox	gfio.h	/^	GtkWidget *disk_util_vbox;$/;"	m	struct:gui_entry	typeref:typename:GtkWidget *
+diskname_to_printable	install/bin/genfio	/^diskname_to_printable() {$/;"	f
 diskname_to_printable	tools/genfio	/^diskname_to_printable() {$/;"	f
 display_lat	stat.c	/^static void display_lat(const char *name, unsigned long long min,$/;"	f	typeref:typename:void	file:
 display_thread_status	eta.c	/^void display_thread_status(struct jobs_eta *je)$/;"	f	typeref:typename:void
@@ -5879,6 +5987,7 @@ do_work	t/dedupe.c	/^static int do_work(struct worker_thread *thread, void *buf)
 doc	Makefile	/^doc: tools\/plot\/fio2gnuplot.1$/;"	t
 doctest	doc/Makefile	/^doctest:$/;"	t
 done	engines/dev-dax.c	/^done:$/;"	L	function:fio_devdax_prep	file:
+done	engines/mmap-anno.c	/^done:$/;"	L	function:fio_mmapio_prep	file:
 done	engines/mmap.c	/^done:$/;"	L	function:fio_mmapio_prep	file:
 done	filesetup.c	/^done:$/;"	L	function:extend_file	file:
 done	filesetup.c	/^done:$/;"	L	function:setup_files	file:
@@ -6190,6 +6299,7 @@ err	engines/libpmem.c	/^err:$/;"	L	function:fio_libpmem_file	file:
 err	engines/librpma_fio.c	/^err:$/;"	L	function:client_queue_sync	file:
 err	engines/libzbc.c	/^err:$/;"	L	function:libzbc_open_dev	file:
 err	engines/libzbc.c	/^err:$/;"	L	function:libzbc_reset_wp	file:
+err	engines/mmap-anno.c	/^err:$/;"	L	function:fio_mmap_file	file:
 err	engines/mmap.c	/^err:$/;"	L	function:fio_mmap_file	file:
 err	engines/net.c	/^err:$/;"	L	function:fio_netio_accept	file:
 err	filelock.c	/^err:$/;"	L	function:fio_filelock_init	file:
@@ -6202,6 +6312,7 @@ err	gettime.c	/^err:$/;"	L	function:clock_thread_fn	file:
 err	gettime.c	/^err:$/;"	L	function:fio_monotonic_clocktest	file:
 err	helper_thread.c	/^err:$/;"	L	function:pipe_over_loopback	file:
 err	init.c	/^err:$/;"	L	function:add_job	file:
+err	install/bin/fiologparser_hist.py	/^err = sys.stderr.write$/;"	v
 err	ioengines.c	/^err:$/;"	L	function:td_io_open_file	file:
 err	iolog.c	/^	int err;$/;"	m	struct:inflate_chunk_iter	typeref:typename:int	file:
 err	iolog.c	/^err:$/;"	L	function:gz_work	file:
@@ -6372,6 +6483,7 @@ events	t/io_uring.c	/^static int reap_events_aio(struct submitter *s, struct io_
 evs	t/io_uring.c	/^static int reap_events_aio(struct submitter *s, struct io_event *events, int evs)$/;"	z	function:reap_events_aio	typeref:typename:int	file:
 examine_zone	zbd.c	/^examine_zone:$/;"	L	function:zbd_convert_to_open_zone	file:
 exceeds_number_ios	backend.c	/^static bool exceeds_number_ios(struct thread_data *td)$/;"	f	typeref:typename:bool	file:
+exception_suffix	install/bin/fio-histo-log-pctiles.py	/^def exception_suffix( record_num, pathname ):$/;"	f
 exception_suffix	tools/hist/fio-histo-log-pctiles.py	/^def exception_suffix( record_num, pathname ):$/;"	f
 exclude_patterns	doc/conf.py	/^exclude_patterns = ['output', 'Thumbs.db', '.DS_Store', 'fio_examples.rst']$/;"	v
 exec_background	engines/exec.c	/^static int exec_background(struct thread_options *o, struct exec_options *eo)$/;"	f	typeref:typename:int	file:
@@ -6498,6 +6610,11 @@ f	engines/libzbc.c	/^static int libzbc_open_dev(struct thread_data *td, struct f
 f	engines/libzbc.c	/^static int libzbc_open_file(struct thread_data *td, struct fio_file *f)$/;"	z	function:libzbc_open_file	typeref:struct:fio_file *	file:
 f	engines/libzbc.c	/^static int libzbc_report_zones(struct thread_data *td, struct fio_file *f,$/;"	z	function:libzbc_report_zones	typeref:struct:fio_file *	file:
 f	engines/libzbc.c	/^static int libzbc_reset_wp(struct thread_data *td, struct fio_file *f,$/;"	z	function:libzbc_reset_wp	typeref:struct:fio_file *	file:
+f	engines/mmap-anno.c	/^static bool fio_madvise_file(struct thread_data *td, struct fio_file *f,$/;"	z	function:fio_madvise_file	typeref:struct:fio_file *	file:
+f	engines/mmap-anno.c	/^static int fio_mmap_file(struct thread_data *td, struct fio_file *f,$/;"	z	function:fio_mmap_file	typeref:struct:fio_file *	file:
+f	engines/mmap-anno.c	/^static int fio_mmapio_close_file(struct thread_data *td, struct fio_file *f)$/;"	z	function:fio_mmapio_close_file	typeref:struct:fio_file *	file:
+f	engines/mmap-anno.c	/^static int fio_mmapio_get_file_size(struct thread_data *td, struct fio_file *f){$/;"	z	function:fio_mmapio_get_file_size	typeref:struct:fio_file *	file:
+f	engines/mmap-anno.c	/^static int fio_mmapio_open_file(struct thread_data *td, struct fio_file *f)$/;"	z	function:fio_mmapio_open_file	typeref:struct:fio_file *	file:
 f	engines/mmap.c	/^static bool fio_madvise_file(struct thread_data *td, struct fio_file *f,$/;"	z	function:fio_madvise_file	typeref:struct:fio_file *	file:
 f	engines/mmap.c	/^static int fio_mmap_file(struct thread_data *td, struct fio_file *f,$/;"	z	function:fio_mmap_file	typeref:struct:fio_file *	file:
 f	engines/mmap.c	/^static int fio_mmapio_close_file(struct thread_data *td, struct fio_file *f)$/;"	z	function:fio_mmapio_close_file	typeref:struct:fio_file *	file:
@@ -7076,6 +7193,7 @@ find_client_by_fd	client.c	/^static struct fio_client *find_client_by_fd(int fd)
 find_double_data	graph.c	/^static double find_double_data(struct graph *g, double_comparator cmp)$/;"	f	typeref:typename:double	file:
 find_double_values	graph.c	/^static double find_double_values(struct graph_label *l, double_comparator cmp)$/;"	f	typeref:typename:double	file:
 find_earliest_io	blktrace.c	/^static int find_earliest_io(struct blktrace_cursor *bcs, int nr_logs)$/;"	f	typeref:typename:int	file:
+find_file	install/bin/fio2gnuplot	/^def find_file(path, pattern):$/;"	f
 find_file	tools/plot/fio2gnuplot	/^def find_file(path, pattern):$/;"	f
 find_handle	os/windows/posix/include/dirent.h	/^	HANDLE find_handle;$/;"	m	struct:dirent_ctx	typeref:typename:HANDLE
 find_hash	gettime.c	/^static struct gtod_log *find_hash(void *caller)$/;"	f	typeref:struct:gtod_log *	file:
@@ -7098,10 +7216,13 @@ finish	t/io_uring.c	/^static volatile int finish;$/;"	v	typeref:typename:volatil
 finish_chunk	iolog.c	/^static void finish_chunk(z_stream *stream, FILE *f,$/;"	f	typeref:typename:void	file:
 finish_entry	server.c	/^static void finish_entry(struct sk_entry *entry)$/;"	f	typeref:typename:void	file:
 finish_log	iolog.c	/^static int finish_log(struct thread_data *td, struct io_log *log, int trylock)$/;"	f	typeref:typename:int	file:
+finish_template	install/bin/genfio	/^finish_template() {$/;"	f
 finish_template	tools/genfio	/^finish_template() {$/;"	f
 fio	Makefile	/^fio: $(FIO_OBJS)$/;"	t
 fio	fio.1	/^.TH fio 1 "August 2017" "User Manual"$/;"	t
+fio	install/man/man1/fio.1	/^.TH fio 1 "August 2017" "User Manual"$/;"	t
 fio - Flexible I/O tester rev. |version|	doc/fio_doc.rst	/^fio - Flexible I\/O tester rev. |version|$/;"	c
+fio2gnuplot	install/man/man1/fio2gnuplot.1	/^.TH fio2gnuplot 1 "August 2013"$/;"	t
 fio2gnuplot	tools/plot/fio2gnuplot.1	/^.TH fio2gnuplot 1 "August 2013"$/;"	t
 fio_abort	backend.c	/^static volatile bool fio_abort;$/;"	v	typeref:typename:volatile bool	file:
 fio_append_gz_chunks	server.c	/^static int fio_append_gz_chunks(struct sk_entry *first, struct io_log *log)$/;"	f	typeref:typename:int	file:
@@ -7571,6 +7692,7 @@ fio_local_clock_init	gettime.c	/^void fio_local_clock_init(void)$/;"	f	typeref:t
 fio_local_clock_init	gettime.h	/^extern void fio_local_clock_init(void);$/;"	p	typeref:typename:void
 fio_lock_file	filelock.c	/^void fio_lock_file(const char *fname)$/;"	f	typeref:typename:void
 fio_lock_file	filelock.h	/^extern void fio_lock_file(const char *);$/;"	p	typeref:typename:void
+fio_madvise_file	engines/mmap-anno.c	/^static bool fio_madvise_file(struct thread_data *td, struct fio_file *f,$/;"	f	typeref:typename:bool	file:
 fio_madvise_file	engines/mmap.c	/^static bool fio_madvise_file(struct thread_data *td, struct fio_file *f,$/;"	f	typeref:typename:bool	file:
 fio_mark_td_terminate	fio.h	/^extern void fio_mark_td_terminate(struct thread_data *);$/;"	p	typeref:typename:void
 fio_mark_td_terminate	libfio.c	/^void fio_mark_td_terminate(struct thread_data *td)$/;"	f	typeref:typename:void
@@ -7588,17 +7710,31 @@ fio_memfree	fio.h	/^static inline void fio_memfree(void *ptr, size_t size, bool 
 fio_memtype	thread_options.h	/^enum fio_memtype {$/;"	g
 fio_mkdir	os/os-windows.h	/^static inline int fio_mkdir(const char *path, mode_t mode) {$/;"	f	typeref:typename:int
 fio_mkdir	os/os.h	/^# define fio_mkdir(/;"	d
+fio_mmap_data	engines/mmap-anno.c	/^struct fio_mmap_data {$/;"	s	file:
 fio_mmap_data	engines/mmap.c	/^struct fio_mmap_data {$/;"	s	file:
+fio_mmap_file	engines/mmap-anno.c	/^static int fio_mmap_file(struct thread_data *td, struct fio_file *f,$/;"	f	typeref:typename:int	file:
 fio_mmap_file	engines/mmap.c	/^static int fio_mmap_file(struct thread_data *td, struct fio_file *f,$/;"	f	typeref:typename:int	file:
+fio_mmap_get_private	engines/mmap-anno.c	/^static int fio_mmap_get_private(struct thread_data *td)$/;"	f	typeref:typename:int	file:
+fio_mmap_get_shared	engines/mmap-anno.c	/^static int fio_mmap_get_shared(struct thread_data *td)$/;"	f	typeref:typename:int	file:
 fio_mmap_get_shared	engines/mmap.c	/^static int fio_mmap_get_shared(struct thread_data *td)$/;"	f	typeref:typename:int	file:
+fio_mmapio_close_file	engines/mmap-anno.c	/^static int fio_mmapio_close_file(struct thread_data *td, struct fio_file *f)$/;"	f	typeref:typename:int	file:
 fio_mmapio_close_file	engines/mmap.c	/^static int fio_mmapio_close_file(struct thread_data *td, struct fio_file *f)$/;"	f	typeref:typename:int	file:
+fio_mmapio_get_file_size	engines/mmap-anno.c	/^static int fio_mmapio_get_file_size(struct thread_data *td, struct fio_file *f){$/;"	f	typeref:typename:int	file:
+fio_mmapio_init	engines/mmap-anno.c	/^static int fio_mmapio_init(struct thread_data *td)$/;"	f	typeref:typename:int	file:
 fio_mmapio_init	engines/mmap.c	/^static int fio_mmapio_init(struct thread_data *td)$/;"	f	typeref:typename:int	file:
+fio_mmapio_open_file	engines/mmap-anno.c	/^static int fio_mmapio_open_file(struct thread_data *td, struct fio_file *f)$/;"	f	typeref:typename:int	file:
 fio_mmapio_open_file	engines/mmap.c	/^static int fio_mmapio_open_file(struct thread_data *td, struct fio_file *f)$/;"	f	typeref:typename:int	file:
+fio_mmapio_prep	engines/mmap-anno.c	/^static int fio_mmapio_prep(struct thread_data *td, struct io_u *io_u)$/;"	f	typeref:typename:int	file:
 fio_mmapio_prep	engines/mmap.c	/^static int fio_mmapio_prep(struct thread_data *td, struct io_u *io_u)$/;"	f	typeref:typename:int	file:
+fio_mmapio_prep_full	engines/mmap-anno.c	/^static int fio_mmapio_prep_full(struct thread_data *td, struct io_u *io_u)$/;"	f	typeref:typename:int	file:
 fio_mmapio_prep_full	engines/mmap.c	/^static int fio_mmapio_prep_full(struct thread_data *td, struct io_u *io_u)$/;"	f	typeref:typename:int	file:
+fio_mmapio_prep_limited	engines/mmap-anno.c	/^static int fio_mmapio_prep_limited(struct thread_data *td, struct io_u *io_u)$/;"	f	typeref:typename:int	file:
 fio_mmapio_prep_limited	engines/mmap.c	/^static int fio_mmapio_prep_limited(struct thread_data *td, struct io_u *io_u)$/;"	f	typeref:typename:int	file:
+fio_mmapio_queue	engines/mmap-anno.c	/^static enum fio_q_status fio_mmapio_queue(struct thread_data *td,$/;"	f	typeref:enum:fio_q_status	file:
 fio_mmapio_queue	engines/mmap.c	/^static enum fio_q_status fio_mmapio_queue(struct thread_data *td,$/;"	f	typeref:enum:fio_q_status	file:
+fio_mmapio_register	engines/mmap-anno.c	/^static void fio_init fio_mmapio_register(void)$/;"	f	typeref:typename:void fio_init	file:
 fio_mmapio_register	engines/mmap.c	/^static void fio_init fio_mmapio_register(void)$/;"	f	typeref:typename:void fio_init	file:
+fio_mmapio_unregister	engines/mmap-anno.c	/^static void fio_exit fio_mmapio_unregister(void)$/;"	f	typeref:typename:void fio_exit	file:
 fio_mmapio_unregister	engines/mmap.c	/^static void fio_exit fio_mmapio_unregister(void)$/;"	f	typeref:typename:void fio_exit	file:
 fio_monotonic_clocktest	gettime.c	/^int fio_monotonic_clocktest(int debug)$/;"	f	typeref:typename:int
 fio_monotonic_clocktest	gettime.h	/^extern int fio_monotonic_clocktest(int debug);$/;"	p	typeref:typename:int
@@ -8101,6 +8237,7 @@ fio_xnvme_register	engines/xnvme.c	/^static void fio_init fio_xnvme_register(voi
 fio_xnvme_unregister	engines/xnvme.c	/^static void fio_exit fio_xnvme_unregister(void)$/;"	f	typeref:typename:void fio_exit	file:
 fio_zone_info	zbd.h	/^struct fio_zone_info {$/;"	s
 fio_zone_mode	thread_options.h	/^enum fio_zone_mode {$/;"	g
+fiologparser_hist.py	install/man/man1/fiologparser_hist.py.1	/^.TH fiologparser_hist.py 1 "August 18, 2016"$/;"	t
 fiologparser_hist.py	tools/hist/fiologparser_hist.py.1	/^.TH fiologparser_hist.py 1 "August 18, 2016"$/;"	t
 first	parse.c	/^			   void *data, int first, int more, int curr)$/;"	z	function:__handle_option	typeref:typename:int	file:
 first	server.c	/^					struct sk_entry *first)$/;"	z	function:__fio_net_prep_tail	typeref:struct:sk_entry *	file:
@@ -8272,6 +8409,7 @@ fmt_desc	lib/pattern.c	/^				const struct pattern_fmt_desc *fmt_desc,$/;"	z	func
 fmt_desc	lib/pattern.c	/^			   const struct pattern_fmt_desc *fmt_desc,$/;"	z	function:parse_and_fill_pattern	typeref:typename:const struct pattern_fmt_desc *	file:
 fmt_desc	lib/pattern.h	/^			   const struct pattern_fmt_desc *fmt_desc,$/;"	z	prototype:parse_and_fill_pattern	typeref:typename:const struct pattern_fmt_desc *	file:
 fmt_desc	options.c	/^static const struct pattern_fmt_desc fmt_desc[] = {$/;"	v	typeref:typename:const struct pattern_fmt_desc[]	file:
+fmt_float_list	install/bin/fiologparser_hist.py	/^def fmt_float_list(ctx, num=1):$/;"	f
 fmt_float_list	tools/hist/fiologparser_hist.py	/^def fmt_float_list(ctx, num=1):$/;"	f
 fmt_sz	lib/pattern.c	/^				struct pattern_fmt *fmt, unsigned int fmt_sz)$/;"	z	function:parse_format	typeref:typename:unsigned int	file:
 fmt_sz	lib/pattern.c	/^			 struct pattern_fmt *fmt, unsigned int fmt_sz,$/;"	z	function:paste_format_inplace	typeref:typename:unsigned int	file:
@@ -8309,6 +8447,7 @@ fname	filesetup.c	/^static bool is_already_allocated(const char *fname)$/;"	z	fu
 fname	filesetup.c	/^static void set_already_allocated(const char *fname)$/;"	z	function:set_already_allocated	typeref:typename:const char *	file:
 fname	iolog.c	/^static bool init_iolog_read(struct thread_data *td, char *fname)$/;"	z	function:init_iolog_read	typeref:typename:char *	file:
 fname	t/btrace2fio.c	/^static int load_blktrace(const char *fname, int need_swap)$/;"	z	function:load_blktrace	typeref:typename:const char *	file:
+fncn	install/bin/fiologparser_hist.py	/^    fncn = lambda z: list([z\/2**x if z % 2**x == 0 else -10 for x in coarses])$/;"	f	function:guess_max_from_bins	file:
 fncn	tools/hist/fiologparser_hist.py	/^    fncn = lambda z: list([z\/2**x if z % 2**x == 0 else -10 for x in coarses])$/;"	f	function:guess_max_from_bins	file:
 fnv	crc/fnv.c	/^uint64_t fnv(const void *buf, uint32_t len, uint64_t hval)$/;"	f	typeref:typename:uint64_t
 fnv	crc/fnv.h	/^uint64_t fnv(const void *, uint32_t, uint64_t);$/;"	p	typeref:typename:uint64_t
@@ -8542,16 +8681,25 @@ ge_hash	gfio.h	/^	GHashTable *ge_hash;$/;"	m	struct:gui	typeref:typename:GHashTa
 ge_update_settings_fn	gfio.c	/^static void ge_update_settings_fn(gpointer key, gpointer value, gpointer data)$/;"	f	typeref:typename:void	file:
 ge_widget_destroy	gfio.c	/^static void ge_widget_destroy(GtkWidget *w, gpointer data)$/;"	f	typeref:typename:void	file:
 gen_eta_str	eta.c	/^static int gen_eta_str(struct jobs_eta *je, char *p, size_t left,$/;"	f	typeref:typename:int	file:
+gen_fio	install/bin/genfio	/^gen_fio() {$/;"	f
 gen_fio	tools/genfio	/^gen_fio() {$/;"	f
 gen_log_name	init.c	/^static void gen_log_name(char *name, size_t size, const char *logtype,$/;"	f	typeref:typename:void	file:
 gen_mixed_ddir_stats_from_ts	stat.c	/^static struct thread_stat *gen_mixed_ddir_stats_from_ts(struct thread_stat *ts)$/;"	f	typeref:struct:thread_stat *	file:
+gen_output_columns	install/bin/fiologparser_hist.py	/^def gen_output_columns(ctx):$/;"	f
 gen_output_columns	tools/hist/fiologparser_hist.py	/^def gen_output_columns(ctx):$/;"	f
+gen_para_fio	install/bin/genfio	/^gen_para_fio() {$/;"	f
 gen_para_fio	tools/genfio	/^gen_para_fio() {$/;"	f
+gen_para_suite	install/bin/genfio	/^gen_para_suite() {$/;"	f
 gen_para_suite	tools/genfio	/^gen_para_suite() {$/;"	f
+gen_seq_fio	install/bin/genfio	/^gen_seq_fio() {$/;"	f
 gen_seq_fio	tools/genfio	/^gen_seq_fio() {$/;"	f
+gen_seq_suite	install/bin/genfio	/^gen_seq_suite() {$/;"	f
 gen_seq_suite	tools/genfio	/^gen_seq_suite() {$/;"	f
+gen_template	install/bin/genfio	/^gen_template() {$/;"	f
 gen_template	tools/genfio	/^gen_template() {$/;"	f
+generate_gnuplot_math_script	install/bin/fio2gnuplot	/^def generate_gnuplot_math_script(title,gnuplot_output_filename,mode,average,gnuplot_output_dir,g/;"	f
 generate_gnuplot_math_script	tools/plot/fio2gnuplot	/^def generate_gnuplot_math_script(title,gnuplot_output_filename,mode,average,gnuplot_output_dir,g/;"	f
+generate_gnuplot_script	install/bin/fio2gnuplot	/^def generate_gnuplot_script(fio_data_file,title,gnuplot_output_filename,gnuplot_output_dir,mode,/;"	f
 generate_gnuplot_script	tools/plot/fio2gnuplot	/^def generate_gnuplot_script(fio_data_file,title,gnuplot_output_filename,gnuplot_output_dir,mode,/;"	f
 generic_close_file	file.h	/^extern int __must_check generic_close_file(struct thread_data *, struct fio_file *);$/;"	p	typeref:typename:int __must_check
 generic_close_file	filesetup.c	/^int generic_close_file(struct thread_data fio_unused *td, struct fio_file *f)$/;"	f	typeref:typename:int
@@ -8576,6 +8724,7 @@ get_cluster_color	tools/fiograph/fiograph.py	/^def get_cluster_color(keyword='fi
 get_cluster_style	tools/fiograph/fiograph.py	/^def get_cluster_style(keyword='fio_jobs'):$/;"	f
 get_config_option	tools/fiograph/fiograph.py	/^def get_config_option(section_name, option_name, default=None):$/;"	f
 get_connection_details	gfio.c	/^static int get_connection_details(struct gui_entry *ge)$/;"	f	typeref:typename:int	file:
+get_contribution	install/bin/fiologparser.py	/^    def get_contribution(self, start, end):$/;"	m	class:Sample
 get_contribution	tools/fiologparser.py	/^    def get_contribution(self, start, end):$/;"	m	class:Sample
 get_cpu_clock	arch/arch-aarch64.h	/^static inline unsigned long long get_cpu_clock(void)$/;"	f	typeref:typename:unsigned long long
 get_cpu_clock	arch/arch-ia64.h	/^static inline unsigned long long get_cpu_clock(void)$/;"	f	typeref:typename:unsigned long long
@@ -8583,6 +8732,7 @@ get_cpu_clock	arch/arch-ppc.h	/^static inline unsigned long long get_cpu_clock(v
 get_cpu_clock	arch/arch-s390.h	/^static inline unsigned long long get_cpu_clock(void)$/;"	f	typeref:typename:unsigned long long
 get_cpu_clock	arch/arch-x86.h	/^static inline unsigned long long get_cpu_clock(void)$/;"	f	typeref:typename:unsigned long long
 get_cpu_clock	arch/arch-x86_64.h	/^static inline unsigned long long get_cpu_clock(void)$/;"	f	typeref:typename:unsigned long long
+get_csvfile	install/bin/fio_jsonplus_clat2csv	/^def get_csvfile(dest, jobnum):$/;"	f
 get_csvfile	tools/fio_jsonplus_clat2csv	/^def get_csvfile(dest, jobnum):$/;"	f
 get_cur_log	stat.c	/^static struct io_logs *get_cur_log(struct io_log *iolog)$/;"	f	typeref:struct:io_logs *	file:
 get_cycles_per_msec	gettime.c	/^static unsigned long get_cycles_per_msec(void)$/;"	f	typeref:typename:unsigned long	file:
@@ -8609,6 +8759,7 @@ get_fs_free_size	os/os-netbsd.h	/^static inline unsigned long long get_fs_free_s
 get_fs_free_size	os/os-openbsd.h	/^static inline unsigned long long get_fs_free_size(const char *path)$/;"	f	typeref:typename:unsigned long long
 get_fs_free_size	os/os-solaris.h	/^static inline unsigned long long get_fs_free_size(const char *path)$/;"	f	typeref:typename:unsigned long long
 get_fs_free_size	os/os.h	/^static inline unsigned long long get_fs_free_size(const char *path)$/;"	f	typeref:typename:unsigned long long
+get_ftime	install/bin/fiologparser.py	/^def get_ftime(series):$/;"	f
 get_ftime	tools/fiologparser.py	/^def get_ftime(series):$/;"	f
 get_ge_from_cur_tab	gfio.c	/^static struct gui_entry *get_ge_from_cur_tab(struct gui *ui)$/;"	f	typeref:struct:gui_entry *	file:
 get_ge_from_page	gfio.c	/^static struct gui_entry *get_ge_from_page(struct gui *ui, gint cur_page,$/;"	f	typeref:struct:gui_entry *	file:
@@ -8631,6 +8782,7 @@ get_max_open_zones	ioengines.h	/^	int (*get_max_open_zones)(struct thread_data *
 get_max_str_idx	options.c	/^int get_max_str_idx(char *input)$/;"	f	typeref:typename:int
 get_max_str_idx	options.h	/^int get_max_str_idx(char *input);$/;"	p	typeref:typename:int
 get_menubar_menu	gfio.c	/^static GtkWidget *get_menubar_menu(GtkWidget *window, GtkUIManager *ui_manager,$/;"	f	typeref:typename:GtkWidget *	file:
+get_min	install/bin/fiologparser_hist.py	/^def get_min(fps, arrs):$/;"	f
 get_min	tools/hist/fiologparser_hist.py	/^def get_min(fps, arrs):$/;"	f
 get_mult_bytes	parse.c	/^static unsigned long long get_mult_bytes(const char *str, int len, void *data,$/;"	f	typeref:typename:unsigned long long	file:
 get_mult_time	parse.c	/^static unsigned long long get_mult_time(const char *str, int len,$/;"	f	typeref:typename:unsigned long long	file:
@@ -8663,6 +8815,7 @@ get_nr_prios_with_samples	stat.c	/^static int get_nr_prios_with_samples(struct t
 get_nsec	t/time-test.c	/^static unsigned long long get_nsec(int mode, unsigned long long t)$/;"	f	typeref:typename:unsigned long long	file:
 get_opt_postfix	options.c	/^static char *get_opt_postfix(const char *str)$/;"	f	typeref:typename:char *	file:
 get_option	parse.c	/^get_option(char *opt, const struct fio_option *options, char **post)$/;"	f	typeref:typename:const struct fio_option *	file:
+get_pctiles	install/bin/fio-histo-log-pctiles.py	/^def get_pctiles(buckets, wanted, time_ranges):$/;"	f
 get_pctiles	tools/hist/fio-histo-log-pctiles.py	/^def get_pctiles(buckets, wanted, time_ranges):$/;"	f
 get_rand_ddir	io_u.c	/^static inline enum fio_ddir get_rand_ddir(struct thread_data *td)$/;"	f	typeref:enum:fio_ddir	file:
 get_rand_file_size	file.h	/^extern unsigned long long get_rand_file_size(struct thread_data *td);$/;"	p	typeref:typename:unsigned long long
@@ -8671,6 +8824,8 @@ get_results_menubar	gclient.c	/^static GtkWidget *get_results_menubar(GtkWidget 
 get_results_window	gclient.c	/^static GtkWidget *get_results_window(struct gui_entry *ge)$/;"	f	typeref:typename:GtkWidget *	file:
 get_rw_ddir	io_u.c	/^static enum fio_ddir get_rw_ddir(struct thread_data *td)$/;"	f	typeref:enum:fio_ddir	file:
 get_sample	iolog.h	/^static inline struct io_sample *get_sample(struct io_log *iolog,$/;"	f	typeref:struct:io_sample *
+get_samples	install/bin/fio-histo-log-pctiles.py	/^def get_samples(buckets):$/;"	f
+get_samples	install/bin/fiologparser.py	/^    def get_samples(self, start, end):$/;"	m	class:TimeSeries
 get_samples	tools/fiologparser.py	/^    def get_samples(self, start, end):$/;"	m	class:TimeSeries
 get_samples	tools/hist/fio-histo-log-pctiles.py	/^def get_samples(buckets):$/;"	f
 get_scrolled_window	ghelpers.c	/^GtkWidget *get_scrolled_window(gint border_width)$/;"	f	typeref:typename:GtkWidget *
@@ -8690,7 +8845,9 @@ get_terse	t/latency_percentiles.py	/^    def get_terse(self):$/;"	m	class:FioLat
 get_test_mask	crc/test.c	/^static unsigned int get_test_mask(const char *type)$/;"	f	typeref:typename:unsigned int	file:
 get_test_mask	lib/memcpy.c	/^static unsigned int get_test_mask(const char *type)$/;"	f	typeref:typename:unsigned int	file:
 get_text_color	tools/fiograph/fiograph.py	/^def get_text_color(keyword='fio_jobs', default_color='black'):$/;"	f
+get_time_intervals	install/bin/fio-histo-log-pctiles.py	/^def get_time_intervals(time_quantum, min_timestamp_ms, max_timestamp_ms):$/;"	f
 get_time_intervals	tools/hist/fio-histo-log-pctiles.py	/^def get_time_intervals(time_quantum, min_timestamp_ms, max_timestamp_ms):$/;"	f
+get_value	install/bin/fiologparser.py	/^    def get_value(self, start, end):$/;"	m	class:TimeSeries
 get_value	tools/fiologparser.py	/^    def get_value(self, start, end):$/;"	m	class:TimeSeries
 get_work	t/dedupe.c	/^static int get_work(uint64_t *offset, uint64_t *size)$/;"	f	typeref:typename:int	file:
 get_zoned_model	ioengines.h	/^	int (*get_zoned_model)(struct thread_data *td,$/;"	m	struct:ioengine_ops	typeref:typename:int (*)(struct thread_data * td,struct fio_file * f,enum zbd_zoned_model *)
@@ -9090,6 +9247,7 @@ gtod_reduce	thread_options.h	/^	uint32_t gtod_reduce;$/;"	m	struct:thread_option
 gtod_reduce	thread_options.h	/^	unsigned int gtod_reduce;$/;"	m	struct:thread_options	typeref:typename:unsigned int
 gtod_thread	gettime-thread.c	/^static pthread_t gtod_thread;$/;"	v	typeref:typename:pthread_t	file:
 gtod_thread_main	gettime-thread.c	/^static void *gtod_thread_main(void *data)$/;"	f	typeref:typename:void *	file:
+guess_max_from_bins	install/bin/fiologparser_hist.py	/^def guess_max_from_bins(ctx, hist_cols):$/;"	f
 guess_max_from_bins	tools/hist/fiologparser_hist.py	/^def guess_max_from_bins(ctx, hist_cols):$/;"	f
 gui	gfio.h	/^struct gui {$/;"	s
 gui_data	parse.h	/^	void *gui_data;$/;"	m	struct:fio_option	typeref:typename:void *
@@ -9352,6 +9510,7 @@ hist_msec	iolog.h	/^	unsigned long hist_msec;$/;"	m	struct:log_params	typeref:ty
 hist_sum	iolog.c	/^uint64_t hist_sum(int j, int stride, uint64_t *io_u_plat,$/;"	f	typeref:typename:uint64_t
 hist_sum	iolog.h	/^extern uint64_t hist_sum(int, int, uint64_t *, uint64_t *);$/;"	p	typeref:typename:uint64_t
 hist_window	iolog.h	/^	struct io_hist hist_window[DDIR_RWDIR_CNT];$/;"	m	struct:io_log	typeref:struct:io_hist[]
+histogram_generator	install/bin/fiologparser_hist.py	/^def histogram_generator(ctx, fps, sz):$/;"	f
 histogram_generator	tools/hist/fiologparser_hist.py	/^def histogram_generator(ctx, fps, sz):$/;"	f
 hits	t/genzipf.c	/^	unsigned long hits;$/;"	m	struct:node	typeref:typename:unsigned long	file:
 hjob	os/os-windows.h	/^HANDLE windows_handle_connection(HANDLE hjob, int sk);$/;"	z	prototype:windows_handle_connection	typeref:typename:HANDLE	file:
@@ -9825,6 +9984,10 @@ io_u	engines/librpma_fio.h	/^char *librpma_fio_client_errdetails(struct io_u *io
 io_u	engines/librpma_gpspm.c	/^static enum fio_q_status server_queue(struct thread_data *td, struct io_u *io_u)$/;"	z	function:server_queue	typeref:struct:io_u *	file:
 io_u	engines/libzbc.c	/^ssize_t libzbc_rw(struct thread_data *td, struct io_u *io_u)$/;"	z	function:libzbc_rw	typeref:struct:io_u *	file:
 io_u	engines/libzbc.c	/^static enum fio_q_status libzbc_queue(struct thread_data *td, struct io_u *io_u)$/;"	z	function:libzbc_queue	typeref:struct:io_u *	file:
+io_u	engines/mmap-anno.c	/^					  struct io_u *io_u)$/;"	z	function:fio_mmapio_queue	typeref:struct:io_u *	file:
+io_u	engines/mmap-anno.c	/^static int fio_mmapio_prep(struct thread_data *td, struct io_u *io_u)$/;"	z	function:fio_mmapio_prep	typeref:struct:io_u *	file:
+io_u	engines/mmap-anno.c	/^static int fio_mmapio_prep_full(struct thread_data *td, struct io_u *io_u)$/;"	z	function:fio_mmapio_prep_full	typeref:struct:io_u *	file:
+io_u	engines/mmap-anno.c	/^static int fio_mmapio_prep_limited(struct thread_data *td, struct io_u *io_u)$/;"	z	function:fio_mmapio_prep_limited	typeref:struct:io_u *	file:
 io_u	engines/mmap.c	/^					  struct io_u *io_u)$/;"	z	function:fio_mmapio_queue	typeref:struct:io_u *	file:
 io_u	engines/mmap.c	/^static int fio_mmapio_prep(struct thread_data *td, struct io_u *io_u)$/;"	z	function:fio_mmapio_prep	typeref:struct:io_u *	file:
 io_u	engines/mmap.c	/^static int fio_mmapio_prep_full(struct thread_data *td, struct io_u *io_u)$/;"	z	function:fio_mmapio_prep_full	typeref:struct:io_u *	file:
@@ -10191,6 +10354,7 @@ ioengine	engines/libhdfs.c	/^FIO_STATIC struct ioengine_ops ioengine = {$/;"	v	t
 ioengine	engines/libiscsi.c	/^FIO_STATIC struct ioengine_ops ioengine = {$/;"	v	typeref:struct:ioengine_ops
 ioengine	engines/libpmem.c	/^FIO_STATIC struct ioengine_ops ioengine = {$/;"	v	typeref:struct:ioengine_ops
 ioengine	engines/libzbc.c	/^FIO_STATIC struct ioengine_ops ioengine = {$/;"	v	typeref:struct:ioengine_ops
+ioengine	engines/mmap-anno.c	/^static struct ioengine_ops ioengine = {$/;"	v	typeref:struct:ioengine_ops	file:
 ioengine	engines/mmap.c	/^static struct ioengine_ops ioengine = {$/;"	v	typeref:struct:ioengine_ops	file:
 ioengine	engines/mtd.c	/^static struct ioengine_ops ioengine = {$/;"	v	typeref:struct:ioengine_ops	file:
 ioengine	engines/nbd.c	/^FIO_STATIC struct ioengine_ops ioengine = {$/;"	v	typeref:struct:ioengine_ops
@@ -10423,6 +10587,7 @@ is_blktrace	blktrace.h	/^static inline bool is_blktrace(const char *fname, int *
 is_buf	init.c	/^		char *file, int is_buf, int stonewall_flag, int type,$/;"	z	function:__parse_jobs_ini	typeref:typename:int	file:
 is_buf	init.c	/^int parse_jobs_ini(char *file, int is_buf, int stonewall_flag, int type)$/;"	z	function:parse_jobs_ini	typeref:typename:int	file:
 is_client	engines/rdma.c	/^	int is_client;$/;"	m	struct:rdmaio_data	typeref:typename:int	file:
+is_close	install/bin/fio-histo-log-pctiles.py	/^    def is_close(self, buckets, buckets_expected):$/;"	m	class:Test
 is_close	tools/hist/fio-histo-log-pctiles.py	/^    def is_close(self, buckets, buckets_expected):$/;"	m	class:Test
 is_close_msg	engines/net.c	/^static int is_close_msg(struct io_u *io_u, int len)$/;"	f	typeref:typename:int	file:
 is_empty_or_comment	init.c	/^static int is_empty_or_comment(char *line)$/;"	f	typeref:typename:int	file:
@@ -10940,6 +11105,8 @@ length	engines/libpmem.c	/^			    size_t length, off_t off)$/;"	z	function:fio_l
 length	engines/librpma_gpspm_flush.pb-c.h	/^  uint64_t length;$/;"	m	struct:_GPSPMFlushRequest	typeref:typename:uint64_t
 length	engines/librpma_gpspm_flush.proto	/^    required fixed64 length = 2;$/;"	f	message:GPSPM_flush_request	typeref:typename:fixed64
 length	engines/libzbc.c	/^			   uint64_t offset, uint64_t length)$/;"	z	function:libzbc_reset_wp	typeref:typename:uint64_t	file:
+length	engines/mmap-anno.c	/^			     size_t length)$/;"	z	function:fio_madvise_file	typeref:typename:size_t	file:
+length	engines/mmap-anno.c	/^			 size_t length, off_t off)$/;"	z	function:fio_mmap_file	typeref:typename:size_t	file:
 length	engines/mmap.c	/^			     size_t length)$/;"	z	function:fio_madvise_file	typeref:typename:size_t	file:
 length	engines/mmap.c	/^			 size_t length, off_t off)$/;"	z	function:fio_mmap_file	typeref:typename:size_t	file:
 length	engines/skeleton_external.c	/^				 uint64_t offset, uint64_t length)$/;"	z	function:fio_skeleton_reset_wp	typeref:typename:uint64_t	file:
@@ -11328,6 +11495,7 @@ loops	profiles/tiobench.c	/^static unsigned int loops = 1;$/;"	v	typeref:typenam
 loops	thread_options.h	/^	uint32_t loops;$/;"	m	struct:thread_options_pack	typeref:typename:uint32_t
 loops	thread_options.h	/^	unsigned int loops;$/;"	m	struct:thread_options	typeref:typename:unsigned int
 lopt	options.c	/^static void add_to_lopt(struct option *lopt, struct fio_option *o,$/;"	z	function:add_to_lopt	typeref:struct:option *	file:
+lower_bin_vals	install/bin/fiologparser_hist.py	/^lower_bin_vals = [] # lower edge of each bin$/;"	v
 lower_bin_vals	tools/hist/fiologparser_hist.py	/^lower_bin_vals = [] # lower edge of each bin$/;"	v
 lowest_mtd_num	oslib/libmtd.h	/^	int lowest_mtd_num;$/;"	m	struct:mtd_info	typeref:typename:int
 lpParameter	engines/windowsaio.c	/^static DWORD WINAPI IoCompletionRoutine(LPVOID lpParameter)$/;"	z	function:IoCompletionRoutine	typeref:typename:LPVOID	file:
@@ -11358,6 +11526,9 @@ main	ci/actions-smoke-test.sh	/^main() {$/;"	f
 main	exp/test-expression-parser.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
 main	fio.c	/^int main(int argc, char *argv[], char *envp[])$/;"	f	typeref:typename:int
 main	gfio.c	/^int main(int argc, char *argv[], char *envp[])$/;"	f	typeref:typename:int
+main	install/bin/fio2gnuplot	/^def main(argv):$/;"	f
+main	install/bin/fio_jsonplus_clat2csv	/^def main():$/;"	f
+main	install/bin/fiologparser_hist.py	/^def main(ctx):$/;"	f
 main	t/axmap.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
 main	t/btrace2fio.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
 main	t/dedupe.c	/^int main(int argc, char *argv[])$/;"	f	typeref:typename:int
@@ -11615,6 +11786,7 @@ mean	stat.h	/^				unsigned long long *max, double *mean,$/;"	z	function:nsec_to_
 mean	stat.h	/^				unsigned long long *max, double *mean,$/;"	z	function:nsec_to_usec	typeref:typename:double *	file:
 mean	stat.h	/^extern bool calc_lat(struct io_stat *is, unsigned long long *min, unsigned long long *max, doubl/;"	z	prototype:calc_lat	typeref:typename:double *	file:
 mean	t/steadystate_tests.py	/^                        objsame, met, mean, target = check(data=jsonjob['steadystate']['data'],$/;"	v
+median	install/bin/fiologparser.py	/^def median(values):$/;"	f
 median	tools/fiologparser.py	/^def median(values):$/;"	f
 mem	engines/librpma_fio.c	/^		size_t size, struct librpma_fio_mem *mem)$/;"	z	function:librpma_fio_allocate_pmem	typeref:struct:librpma_fio_mem *	file:
 mem	engines/librpma_fio.c	/^	struct librpma_fio_mem *mem)$/;"	z	function:librpma_fio_allocate_dram	typeref:struct:librpma_fio_mem *	file:
@@ -11780,11 +11952,16 @@ mmap	engines/io_uring.c	/^	struct ioring_mmap mmap[3];$/;"	m	struct:ioring_data	
 mmap	os/windows/posix.c	/^void *mmap(void *addr, size_t len, int prot, int flags, int fildes, off_t off)$/;"	f	typeref:typename:void *
 mmap	os/windows/posix/include/sys/mman.h	/^void *mmap(void *addr, size_t len, int prot, int flags,$/;"	p	typeref:typename:void *
 mmap_data	io_u.h	/^		void *mmap_data;$/;"	m	union:io_u::__anon04db5ec7040a	typeref:typename:void *
+mmap_map_size	engines/mmap-anno.c	/^static unsigned long mmap_map_size;$/;"	v	typeref:typename:unsigned long	file:
 mmap_map_size	engines/mmap.c	/^static unsigned long mmap_map_size;$/;"	v	typeref:typename:unsigned long	file:
+mmap_off	engines/mmap-anno.c	/^	off_t mmap_off;$/;"	m	struct:fio_mmap_data	typeref:typename:off_t	file:
 mmap_off	engines/mmap.c	/^	off_t mmap_off;$/;"	m	struct:fio_mmap_data	typeref:typename:off_t	file:
+mmap_options	engines/mmap-anno.c	/^struct mmap_options {$/;"	s	file:
 mmap_options	engines/mmap.c	/^struct mmap_options {$/;"	s	file:
+mmap_ptr	engines/mmap-anno.c	/^	void *mmap_ptr;$/;"	m	struct:fio_mmap_data	typeref:typename:void *	file:
 mmap_ptr	engines/mmap.c	/^	void *mmap_ptr;$/;"	m	struct:fio_mmap_data	typeref:typename:void *	file:
 mmap_size	smalloc.c	/^	size_t mmap_size;$/;"	m	struct:pool	typeref:typename:size_t	file:
+mmap_sz	engines/mmap-anno.c	/^	size_t mmap_sz;$/;"	m	struct:fio_mmap_data	typeref:typename:size_t	file:
 mmap_sz	engines/mmap.c	/^	size_t mmap_sz;$/;"	m	struct:fio_mmap_data	typeref:typename:size_t	file:
 mmapfd	fio.h	/^	int mmapfd;$/;"	m	struct:thread_data	typeref:typename:int
 mmapfile	thread_options.h	/^	char *mmapfile;$/;"	m	struct:thread_options	typeref:typename:char *
@@ -11825,6 +12002,7 @@ model	zbd.c	/^			       enum zbd_zoned_model *model)$/;"	z	function:zbd_get_zone
 model	zbd.h	/^	enum zbd_zoned_model	model;$/;"	m	struct:zoned_block_device_info	typeref:enum:zbd_zoned_model
 monitor_process_till_connect	os/windows/posix.c	/^static bool monitor_process_till_connect(PROCESS_INFORMATION *pi, HANDLE *hpipe)$/;"	f	typeref:typename:bool	file:
 more	parse.c	/^			   void *data, int first, int more, int curr)$/;"	z	function:__handle_option	typeref:typename:int	file:
+more_bins	install/bin/fio_jsonplus_clat2csv	/^def more_bins(indices, bins):$/;"	f
 more_bins	tools/fio_jsonplus_clat2csv	/^def more_bins(indices, bins):$/;"	f
 mounted	backend.c	/^mounted:$/;"	L	function:check_mount_writes	file:
 move_extent	engines/e4defrag.c	/^struct move_extent {$/;"	s	file:
@@ -11835,6 +12013,7 @@ mr_desc_size	engines/librpma_fio.h	/^	uint8_t mr_desc_size;	\/* size of mr_desc 
 msec	diskutil.h	/^	uint64_t msec;$/;"	m	struct:disk_util_stats	typeref:typename:uint64_t
 msec	io_u.c	/^static void io_u_mark_lat_msec(struct thread_data *td, unsigned long long msec)$/;"	z	function:io_u_mark_lat_msec	typeref:typename:unsigned long long	file:
 msec	time.c	/^void timespec_add_msec(struct timespec *ts, unsigned int msec)$/;"	z	function:timespec_add_msec	typeref:typename:unsigned int	file:
+msec_per_sec	install/bin/fio-histo-log-pctiles.py	/^msec_per_sec = 1000$/;"	v
 msec_per_sec	tools/hist/fio-histo-log-pctiles.py	/^msec_per_sec = 1000$/;"	v
 msec_to_next_event	helper_thread.c	/^		      unsigned int *msec_to_next_event)$/;"	z	function:eval_timer	typeref:typename:unsigned int *	file:
 msecs	fio_sem.c	/^int fio_sem_down_timeout(struct fio_sem *sem, unsigned int msecs)$/;"	z	function:fio_sem_down_timeout	typeref:typename:unsigned int	file:
@@ -12013,8 +12192,10 @@ mutex_init_pshared_with_type	pshared.h	/^extern int mutex_init_pshared_with_type
 mwc	engines/cpu.c	/^struct mwc {$/;"	s	file:
 mwc	engines/cpu.c	/^uint32_t mwc32(struct mwc *mwc)$/;"	z	function:mwc32	typeref:struct:mwc *	file:
 mwc32	engines/cpu.c	/^uint32_t mwc32(struct mwc *mwc)$/;"	f	typeref:typename:uint32_t
+my_extend	install/bin/fiologparser.py	/^def my_extend( vlist, val ):$/;"	f
 my_extend	tools/fiologparser.py	/^def my_extend( vlist, val ):$/;"	f
 my_gpu_id	engines/libcufile.c	/^	int                 my_gpu_id;     \/* GPU id to use for this job *\/$/;"	m	struct:libcufile_options	typeref:typename:int	file:
+myabort	install/bin/fio-histo-log-pctiles.py	/^def myabort(msg):$/;"	f
 myabort	tools/hist/fio-histo-log-pctiles.py	/^def myabort(msg):$/;"	f
 n	init.c	/^static unsigned int gcd(unsigned int m, unsigned int n)$/;"	z	function:gcd	typeref:typename:unsigned int	file:
 n	lex.yy.c	/^static void yy_flex_strncpy (char* s1, const char * s2, int n )$/;"	z	function:yy_flex_strncpy	typeref:typename:int	file:
@@ -12179,6 +12360,7 @@ next	flist.h	/^			       struct flist_head *next)$/;"	z	function:__flist_add	typ
 next	flist.h	/^	struct flist_head *next, *prev;$/;"	m	struct:flist_head	typeref:struct:flist_head *
 next	oslib/libmtd_legacy.c	/^	char *next;$/;"	m	struct:proc_parse_info	typeref:typename:char *	file:
 next	server.c	/^	struct flist_head next;	\/* Other sk_entry's, if linked command *\/$/;"	m	struct:sk_entry	typeref:struct:flist_head	file:
+nextData	install/bin/fiologparser_hist.py	/^    def nextData(self):$/;"	m	class:HistFileRdr
 nextData	tools/hist/fiologparser_hist.py	/^    def nextData(self):$/;"	m	class:HistFileRdr
 next_buffered_event	engines/nfs.c	/^	int next_buffered_event; \/* round robin-pointer within events[] *\/$/;"	m	struct:fio_libnfs_options	typeref:typename:int	file:
 next_file	fio.h	/^		unsigned int next_file;$/;"	m	union:thread_data::__anon0f7035d9080a	typeref:typename:unsigned int
@@ -12301,6 +12483,7 @@ nowait	engines/io_uring.c	/^	unsigned int nowait;$/;"	m	struct:ioring_options	ty
 nowait	engines/libaio.c	/^	unsigned int nowait;$/;"	m	struct:libaio_options	typeref:typename:unsigned int	file:
 nowait	engines/sync.c	/^	unsigned int nowait;$/;"	m	struct:psyncv2_options	typeref:typename:unsigned int	file:
 nowarn_snprintf	lib/nowarn_snprintf.h	/^static inline int nowarn_snprintf(char *str, size_t size, const char *format,$/;"	f	typeref:typename:int
+np	install/bin/fiologparser_hist.py	/^import numpy as np$/;"	I	nameref:module:numpy
 np	tools/hist/fiologparser_hist.py	/^import numpy as np$/;"	I	nameref:module:numpy
 nr	engines/io_uring.c	/^static void fio_ioring_queued(struct thread_data *td, int start, int nr)$/;"	z	function:fio_ioring_queued	typeref:typename:int	file:
 nr	engines/libaio.c	/^			      unsigned int nr)$/;"	z	function:fio_libaio_queued	typeref:typename:unsigned int	file:
@@ -12438,6 +12621,7 @@ nsec	stat.c	/^		    unsigned long long nsec, unsigned long long bs,$/;"	z	functi
 nsec	stat.c	/^add_lat_percentile_prio_sample(struct thread_stat *ts, unsigned long long nsec,$/;"	z	function:add_lat_percentile_prio_sample	typeref:typename:unsigned long long	file:
 nsec	stat.c	/^void add_sync_clat_sample(struct thread_stat *ts, unsigned long long nsec)$/;"	z	function:add_sync_clat_sample	typeref:typename:unsigned long long	file:
 nsec	stat.h	/^				unsigned long long nsec);$/;"	z	prototype:add_sync_clat_sample	typeref:typename:unsigned long long	file:
+nsec_per_usec	install/bin/fio-histo-log-pctiles.py	/^nsec_per_usec = 1000$/;"	v
 nsec_per_usec	tools/hist/fio-histo-log-pctiles.py	/^nsec_per_usec = 1000$/;"	v
 nsec_to_msec	stat.h	/^static inline bool nsec_to_msec(unsigned long long *min,$/;"	f	typeref:typename:bool
 nsec_to_usec	stat.h	/^static inline bool nsec_to_usec(unsigned long long *min,$/;"	f	typeref:typename:bool
@@ -12635,6 +12819,7 @@ odirect	thread_options.h	/^	unsigned int odirect;$/;"	m	struct:thread_options	ty
 off	blktrace.c	/^				 int nr_logs, int def, size_t off)$/;"	z	function:init_merge_param_list	typeref:typename:size_t	file:
 off	engines/dev-dax.c	/^			   size_t length, off_t off)$/;"	z	function:fio_devdax_file	typeref:typename:off_t	file:
 off	engines/libpmem.c	/^			    size_t length, off_t off)$/;"	z	function:fio_libpmem_file	typeref:typename:off_t	file:
+off	engines/mmap-anno.c	/^			 size_t length, off_t off)$/;"	z	function:fio_mmap_file	typeref:typename:off_t	file:
 off	engines/mmap.c	/^			 size_t length, off_t off)$/;"	z	function:fio_mmap_file	typeref:typename:off_t	file:
 off	filesetup.c	/^				   unsigned long long off,$/;"	z	function:__file_invalidate_cache	typeref:typename:unsigned long long	file:
 off	lib/lfsr.c	/^int lfsr_next(struct fio_lfsr *fl, uint64_t *off)$/;"	z	function:lfsr_next	typeref:typename:uint64_t *	file:
@@ -12900,6 +13085,7 @@ options	engines/libaio.c	/^static struct fio_option options[] = {$/;"	v	typeref:
 options	engines/libcufile.c	/^static struct fio_option options[] = {$/;"	v	typeref:struct:fio_option[]	file:
 options	engines/libhdfs.c	/^static struct fio_option options[] = {$/;"	v	typeref:struct:fio_option[]	file:
 options	engines/libiscsi.c	/^static struct fio_option options[] = {$/;"	v	typeref:struct:fio_option[]	file:
+options	engines/mmap-anno.c	/^static struct fio_option options[] = {$/;"	v	typeref:struct:fio_option[]	file:
 options	engines/mmap.c	/^static struct fio_option options[] = {$/;"	v	typeref:struct:fio_option[]	file:
 options	engines/mtd.c	/^static struct fio_option options[] = {$/;"	v	typeref:struct:fio_option[]	file:
 options	engines/nbd.c	/^static struct fio_option options[] = {$/;"	v	typeref:struct:fio_option[]	file:
@@ -13129,6 +13315,7 @@ output	t/steadystate_tests.py	/^        output = subprocess.check_output([args.f
 output_ascii	t/btrace2fio.c	/^static int output_ascii = 1;$/;"	v	typeref:typename:int	file:
 output_csv	t/genzipf.c	/^static void output_csv(struct node *nodes, unsigned long nnodes)$/;"	f	typeref:typename:void	file:
 output_format	init.c	/^int output_format = FIO_OUTPUT_NORMAL;$/;"	v	typeref:typename:int
+output_interval_data	install/bin/fiologparser_hist.py	/^def output_interval_data(ctx,directions):$/;"	f
 output_interval_data	tools/hist/fiologparser_hist.py	/^def output_interval_data(ctx,directions):$/;"	f
 output_normal	t/genzipf.c	/^static void output_normal(struct node *nodes, unsigned long nnodes,$/;"	f	typeref:typename:void	file:
 output_nranges	t/genzipf.c	/^static unsigned long output_nranges = DEF_NR_OUTPUT;$/;"	v	typeref:typename:unsigned long	file:
@@ -13136,6 +13323,7 @@ output_p	t/btrace2fio.c	/^static int output_p(void)$/;"	f	typeref:typename:int	f
 output_sum	t/genzipf.c	/^struct output_sum {$/;"	s	file:
 output_sym	configure	/^output_sym() {$/;"	f
 output_type	t/genzipf.c	/^static int output_type = OUTPUT_NORMAL;$/;"	v	typeref:typename:int	file:
+output_weighted_interval_data	install/bin/fiologparser_hist.py	/^def output_weighted_interval_data(ctx,printdirs):$/;"	f
 output_weighted_interval_data	tools/hist/fiologparser_hist.py	/^def output_weighted_interval_data(ctx,printdirs):$/;"	f
 outstanding_events	engines/nfs.c	/^	int outstanding_events; \/* IOs issued to libnfs, that have not returned yet *\/$/;"	m	struct:fio_libnfs_options	typeref:typename:int	file:
 oval	parse.h	/^	unsigned long long oval;\/* output value *\/$/;"	m	struct:value_pair	typeref:typename:unsigned long long
@@ -13166,6 +13354,7 @@ p	goptions.c	/^				    struct fio_option *o, unsigned long long *p,$/;"	z	functi
 p	goptions.c	/^static void gopt_int_set_val(struct gopt_int *i, unsigned long long p)$/;"	z	function:gopt_int_set_val	typeref:typename:unsigned long long	file:
 p	graph.h	/^extern int graph_contains_xy(struct graph *p, int x, int y);$/;"	z	prototype:graph_contains_xy	typeref:struct:graph *	file:
 p	init.c	/^static void dump_print_option(struct print_option *p)$/;"	z	function:dump_print_option	typeref:struct:print_option *	file:
+p	install/bin/fiologparser_hist.py	/^    p = argparse.ArgumentParser()$/;"	v
 p	io_u.h	/^static inline void dprint_io_u(struct io_u *io_u, const char *p)$/;"	z	function:dprint_io_u	typeref:typename:const char *	file:
 p	iolog.c	/^void setup_log(struct io_log **log, struct log_params *p,$/;"	z	function:setup_log	typeref:struct:log_params *	file:
 p	lib/rbtree.h	/^static inline void rb_set_parent(struct fio_rb_node *rb, struct fio_rb_node *p)$/;"	z	function:rb_set_parent	typeref:struct:fio_rb_node *	file:
@@ -13248,6 +13437,7 @@ pad	engines/http.c	/^	void *pad;$/;"	m	struct:http_options	typeref:typename:void
 pad	engines/libhdfs.c	/^	void *pad;			\/* needed because offset can't be 0 for an option defined used offsetof *\/$/;"	m	struct:hdfsio_options	typeref:typename:void *	file:
 pad	engines/libiscsi.c	/^	void	*pad;$/;"	m	struct:iscsi_options	typeref:typename:void *	file:
 pad	engines/librpma_fio.h	/^	void *pad;$/;"	m	struct:librpma_fio_options_values	typeref:typename:void *
+pad	engines/mmap-anno.c	/^	void *pad;$/;"	m	struct:mmap_options	typeref:typename:void *	file:
 pad	engines/mmap.c	/^	void *pad;$/;"	m	struct:mmap_options	typeref:typename:void *	file:
 pad	engines/mtd.c	/^	void *pad; \/* avoid off1 == 0 *\/$/;"	m	struct:fio_mtd_options	typeref:typename:void *	file:
 pad	engines/rados.c	/^	void *pad;$/;"	m	struct:rados_options	typeref:typename:void *	file:
@@ -13321,6 +13511,8 @@ pareto_pow	lib/zipf.h	/^	double pareto_pow;$/;"	m	struct:zipf_state	typeref:type
 parse.o	Makefile	/^parse.o: lex.yy.o y.tab.o$/;"	t
 parse_and_fill_pattern	lib/pattern.c	/^int parse_and_fill_pattern(const char *in, unsigned int in_len,$/;"	f	typeref:typename:int
 parse_and_fill_pattern	lib/pattern.h	/^int parse_and_fill_pattern(const char *in, unsigned int in_len,$/;"	p	typeref:typename:int
+parse_args	install/bin/fio_jsonplus_clat2csv	/^def parse_args():$/;"	f
+parse_args	install/bin/fiologparser.py	/^def parse_args():$/;"	f
 parse_args	t/jsonplus2csv_test.py	/^def parse_args():$/;"	f
 parse_args	t/latency_percentiles.py	/^def parse_args():$/;"	f
 parse_args	t/readonly.py	/^def parse_args():$/;"	f
@@ -13336,13 +13528,16 @@ parse_cmd_line	fio.h	/^extern int parse_cmd_line(int, char **, int);$/;"	p	typer
 parse_cmd_line	init.c	/^int parse_cmd_line(int argc, char *argv[], int client_type)$/;"	f	typeref:typename:int
 parse_cmd_option	parse.c	/^int parse_cmd_option(const char *opt, const char *val,$/;"	f	typeref:typename:int
 parse_cmd_option	parse.h	/^extern int parse_cmd_option(const char *t, const char *l,$/;"	p	typeref:typename:int
+parse_cmdline	install/bin/genfio	/^parse_cmdline() {$/;"	f
 parse_cmdline	tools/genfio	/^parse_cmdline() {$/;"	f
 parse_cmdprio_bssplit_entry	options.c	/^static int parse_cmdprio_bssplit_entry(struct thread_options *o,$/;"	f	typeref:typename:int	file:
 parse_dryrun	fio.h	/^extern bool parse_dryrun(void);$/;"	p	typeref:typename:bool
 parse_dryrun	init.c	/^bool parse_dryrun(void)$/;"	f	typeref:typename:bool
 parse_file	lib/pattern.c	/^static const char *parse_file(const char *beg, char *out,$/;"	f	typeref:typename:const char *	file:
 parse_format	lib/pattern.c	/^static const char *parse_format(const char *in, char *out, unsigned int parsed,$/;"	f	typeref:typename:const char *	file:
+parse_global_files	install/bin/fio2gnuplot	/^def parse_global_files(fio_data_file, global_search):$/;"	f
 parse_global_files	tools/plot/fio2gnuplot	/^def parse_global_files(fio_data_file, global_search):$/;"	f
+parse_hist_file	install/bin/fio-histo-log-pctiles.py	/^def parse_hist_file(logfn, buckets_per_interval, log_hist_msec):$/;"	f
 parse_hist_file	tools/hist/fio-histo-log-pctiles.py	/^def parse_hist_file(logfn, buckets_per_interval, log_hist_msec):$/;"	f
 parse_is_percent	parse.h	/^static inline int parse_is_percent(unsigned long long val)$/;"	f	typeref:typename:int
 parse_is_percent_uncapped	parse.h	/^static inline int parse_is_percent_uncapped(unsigned long long val)$/;"	f	typeref:typename:int
@@ -13494,6 +13689,8 @@ percentage	engines/cmdprio.h	/^	unsigned int percentage[CMDPRIO_RWDIR_CNT];$/;"	
 percentage	lib/rand.c	/^				    unsigned int percentage,$/;"	z	function:fill_random_buf_percentage	typeref:typename:unsigned int	file:
 percentage	lib/rand.c	/^				  unsigned int percentage,$/;"	z	function:__fill_random_buf_percentage	typeref:typename:unsigned int	file:
 percentage	t/genzipf.c	/^static double percentage;$/;"	v	typeref:typename:double	file:
+percentile	install/bin/fio_jsonplus_clat2csv	/^def percentile(idx, run_total):$/;"	f
+percentile	install/bin/fiologparser.py	/^def percentile(values, p):$/;"	f
 percentile	tools/fio_jsonplus_clat2csv	/^def percentile(idx, run_total):$/;"	f
 percentile	tools/fiologparser.py	/^def percentile(values, p):$/;"	f
 percentile_list	stat.h	/^	fio_fp64_t percentile_list[FIO_IO_U_LIST_MAX_LEN];$/;"	m	struct:thread_stat	typeref:typename:fio_fp64_t[]
@@ -13504,6 +13701,7 @@ percentile_precision	thread_options.h	/^	uint32_t percentile_precision;$/;"	m	st
 percentile_precision	thread_options.h	/^	unsigned int percentile_precision;	\/* digits after decimal for percentiles *\/$/;"	m	struct:thread_options	typeref:typename:unsigned int
 percentiles	stat.c	/^					     uint32_t percentiles,$/;"	z	function:add_ddir_lat_json	typeref:typename:uint32_t	file:
 percentiles	stat.c	/^				  fio_fp64_t *plist, unsigned int **percentiles,$/;"	z	function:calc_block_percentiles	typeref:typename:unsigned int **	file:
+percs	install/bin/fiologparser_hist.py	/^percs = None$/;"	v
 percs	tools/hist/fiologparser_hist.py	/^percs = None$/;"	v
 personality	os/linux/io_uring.h	/^	__u16	personality;$/;"	m	struct:io_uring_sqe	typeref:typename:__u16
 pfds	engines/libiscsi.c	/^	struct pollfd		 *pfds;$/;"	m	struct:iscsi_info	typeref:struct:pollfd *	file:
@@ -13568,6 +13766,7 @@ plat_entry	iolog.h	/^	struct io_u_plat_entry *plat_entry;$/;"	m	union:io_sample_
 plat_idx_to_val	stat.c	/^static unsigned long long plat_idx_to_val(unsigned int idx)$/;"	f	typeref:typename:unsigned long long	file:
 plat_idx_to_val	t/io_uring.c	/^static unsigned long plat_idx_to_val(unsigned int idx)$/;"	f	typeref:typename:unsigned long	file:
 plat_idx_to_val	t/read-to-pipe-async.c	/^static unsigned int plat_idx_to_val(unsigned int idx)$/;"	f	typeref:typename:unsigned int	file:
+plat_idx_to_val_coarse	install/bin/fiologparser_hist.py	/^def plat_idx_to_val_coarse(idx, coarseness, edge=0.5):$/;"	f
 plat_idx_to_val_coarse	tools/hist/fiologparser_hist.py	/^def plat_idx_to_val_coarse(idx, coarseness, edge=0.5):$/;"	f
 plat_val_to_idx	stat.c	/^static unsigned int plat_val_to_idx(unsigned long long val)$/;"	f	typeref:typename:unsigned int	file:
 plat_val_to_idx	t/io_uring.c	/^static unsigned int plat_val_to_idx(unsigned long val)$/;"	f	typeref:typename:unsigned int	file:
@@ -13582,6 +13781,7 @@ plist	stat.h	/^extern unsigned int calc_clat_percentiles(uint64_t *io_u_plat, un
 plist	t/io_uring.c	/^static float plist[] = { 1.0, 5.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0,$/;"	v	typeref:typename:float[]	file:
 plist	t/read-to-pipe-async.c	/^static double plist[PLAT_LIST_MAX] = { 50.0, 75.0, 90.0, 95.0, 99.0, 99.5, 99.9, 99.99, 99.999, /;"	v	typeref:typename:double[]	file:
 plist_len	t/io_uring.c	/^static int plist_len = 17;$/;"	v	typeref:typename:int	file:
+plot	install/bin/fio_generate_plots	/^plot () {$/;"	f
 plot	tools/fio_generate_plots	/^plot () {$/;"	f
 pmb	engines/pmemblk.c	/^static void fio_pmemblk_cache_insert(fio_pmemblk_file_t pmb)$/;"	z	function:fio_pmemblk_cache_insert	typeref:typename:fio_pmemblk_file_t	file:
 pmb	engines/pmemblk.c	/^static void fio_pmemblk_cache_remove(fio_pmemblk_file_t pmb)$/;"	z	function:fio_pmemblk_cache_remove	typeref:typename:fio_pmemblk_file_t	file:
@@ -13724,15 +13924,21 @@ prev_io_iops	eta.c	/^		      unsigned long long *prev_io_iops, unsigned int *iop
 prev_iops	steadystate.h	/^	uint64_t prev_iops;$/;"	m	struct:steadystate_data	typeref:typename:uint64_t
 prev_requested_event_index	engines/nfs.c	/^	int prev_requested_event_index; \/* event last returned via fio_libnfs_event *\/$/;"	m	struct:fio_libnfs_options	typeref:typename:int	file:
 prev_time	steadystate.h	/^	struct timespec prev_time;$/;"	m	struct:steadystate_data	typeref:struct:timespec
+print_all_stats	install/bin/fiologparser.py	/^def print_all_stats(ctx, series):$/;"	f
+print_all_stats	install/bin/fiologparser_hist.py	/^def print_all_stats(ctx, end, mn, ss_cnt, vs, ws, mx, dir=dir):$/;"	f
 print_all_stats	tools/fiologparser.py	/^def print_all_stats(ctx, series):$/;"	f
 print_all_stats	tools/hist/fiologparser_hist.py	/^def print_all_stats(ctx, end, mn, ss_cnt, vs, ws, mx, dir=dir):$/;"	f
+print_averages	install/bin/fiologparser.py	/^def print_averages(ctx, series):$/;"	f
 print_averages	tools/fiologparser.py	/^def print_averages(ctx, series):$/;"	f
 print_config	configure	/^print_config() {$/;"	f
+print_default	install/bin/fiologparser.py	/^def print_default(ctx, series):$/;"	f
 print_default	tools/fiologparser.py	/^def print_default(ctx, series):$/;"	f
 print_disk_util	stat.c	/^void print_disk_util(struct disk_util_stat *dus, struct disk_util_agg *agg,$/;"	f	typeref:typename:void
 print_disk_util	stat.h	/^extern void print_disk_util(struct disk_util_stat *, struct disk_util_agg *, int terse, struct b/;"	p	typeref:typename:void
 print_error	printing.c	/^static void printing_error_dialog(GtkWidget *window, GError *print_error)$/;"	z	function:printing_error_dialog	typeref:typename:GError *	file:
+print_full	install/bin/fiologparser.py	/^def print_full(ctx, series):$/;"	f
 print_full	tools/fiologparser.py	/^def print_full(ctx, series):$/;"	f
+print_help	install/bin/fio2gnuplot	/^def print_help():$/;"	f
 print_help	tools/plot/fio2gnuplot	/^def print_help():$/;"	f
 print_mask	os/windows/cpu-affinity.c	/^static void print_mask(os_cpu_mask_t *cpumask)$/;"	f	typeref:typename:void	file:
 print_option	parse.c	/^static void print_option(const struct fio_option *o)$/;"	f	typeref:typename:void	file:
@@ -13741,6 +13947,7 @@ print_params	printing.c	/^} print_params = { 0 };$/;"	v	typeref:struct:printing_
 print_progress	t/dedupe.c	/^static unsigned int print_progress = 1;$/;"	v	typeref:typename:unsigned int	file:
 print_status_init	eta.c	/^void print_status_init(int thr_number)$/;"	f	typeref:typename:void
 print_status_init	fio.h	/^extern void print_status_init(int);$/;"	p	typeref:typename:void
+print_sums	install/bin/fiologparser.py	/^def print_sums(ctx, series):$/;"	f
 print_sums	tools/fiologparser.py	/^def print_sums(ctx, series):$/;"	f
 print_thread_status	eta.c	/^void print_thread_status(void)$/;"	f	typeref:typename:void
 print_thread_status	fio.h	/^extern void print_thread_status(void);$/;"	p	typeref:typename:void
@@ -13809,7 +14016,9 @@ probe_widget	gfio.h	/^struct probe_widget {$/;"	s
 proc_parse_info	oslib/libmtd_legacy.c	/^struct proc_parse_info$/;"	s	file:
 proc_parse_next	oslib/libmtd_legacy.c	/^static int proc_parse_next(struct proc_parse_info *pi)$/;"	f	typeref:typename:int	file:
 proc_parse_start	oslib/libmtd_legacy.c	/^static int proc_parse_start(struct proc_parse_info *pi)$/;"	f	typeref:typename:int	file:
+process_interval	install/bin/fiologparser_hist.py	/^def process_interval(ctx, iHist, iEnd, dir):$/;"	f
 process_interval	tools/hist/fiologparser_hist.py	/^def process_interval(ctx, iHist, iEnd, dir):$/;"	f
+process_weighted_interval	install/bin/fiologparser_hist.py	/^def process_weighted_interval(ctx, samples, iStart, iEnd, printdirs):$/;"	f
 process_weighted_interval	tools/hist/fiologparser_hist.py	/^def process_weighted_interval(ctx, samples, iStart, iEnd, printdirs):$/;"	f
 processor_group	os/windows/cpu-affinity.c	/^static int mask_to_group_mask(os_cpu_mask_t *cpumask, int *processor_group, uint64_t *affinity_m/;"	z	function:mask_to_group_mask	typeref:typename:int *	file:
 product	t/time-test.c	/^		    unsigned long long product[2])$/;"	z	function:do_mult	typeref:typename:unsigned long long[2]	file:
@@ -14103,8 +14312,10 @@ read_block_dev_entry	diskutil.c	/^static int read_block_dev_entry(char *path, in
 read_blocks	t/dedupe.c	/^static unsigned int read_blocks(int fd, void *buf, off_t offset, size_t size)$/;"	f	typeref:typename:unsigned int	file:
 read_bw	gfio.h	/^	GtkWidget *read_bw;$/;"	m	struct:eta_widget	typeref:typename:GtkWidget *
 read_bw	gfio.h	/^	graph_label_t read_bw;$/;"	m	struct:gfio_graphs	typeref:typename:graph_label_t
+read_chunk	install/bin/fiologparser_hist.py	/^def read_chunk(rdr, sz):$/;"	f
 read_chunk	tools/hist/fiologparser_hist.py	/^def read_chunk(rdr, sz):$/;"	f
 read_data	client.c	/^static int read_data(int fd, void *data, size_t size)$/;"	f	typeref:typename:int	file:
+read_data	install/bin/fiologparser.py	/^    def read_data(self, fn):$/;"	m	class:TimeSeries
 read_data	oslib/libmtd.c	/^static int read_data(const char *file, void *buf, int buf_len)$/;"	f	typeref:typename:int	file:
 read_data	tools/fiologparser.py	/^    def read_data(self, fn):$/;"	m	class:TimeSeries
 read_file	oslib/linux-blkzoned.c	/^static char *read_file(const char *path)$/;"	f	typeref:typename:char *	file:
@@ -14210,6 +14421,7 @@ remove_reply_cmd	client.c	/^static bool remove_reply_cmd(struct fio_client *clie
 remove_trim_entry	trim.h	/^static inline void remove_trim_entry(struct thread_data *td, struct io_piece *ipo)$/;"	f	typeref:typename:void
 removed	client.h	/^	client_timed_out_op	*removed;$/;"	m	struct:client_ops	typeref:typename:client_timed_out_op *
 rename_flags	os/linux/io_uring.h	/^		__u32		rename_flags;$/;"	m	union:io_uring_sqe::__anon2bbba927030a	typeref:typename:__u32
+render_gnuplot	install/bin/fio2gnuplot	/^def render_gnuplot(fio_data_file, gnuplot_output_dir):$/;"	f
 render_gnuplot	tools/plot/fio2gnuplot	/^def render_gnuplot(fio_data_file, gnuplot_output_dir):$/;"	f
 render_option	tools/fiograph/fiograph.py	/^def render_option(section, label, display, option, color_override=None):$/;"	f
 render_options	tools/fiograph/fiograph.py	/^def render_options(fio_file, section_name):$/;"	f
@@ -14442,6 +14654,8 @@ run_str	eta.c	/^static char run_str[__THREAD_RUNSTR_SZ(REAL_MAX_JOBS) + 1];$/;"	
 run_str_condensed	eta.c	/^static void update_condensed_str(char *rstr, char *run_str_condensed)$/;"	z	function:update_condensed_str	typeref:typename:char *	file:
 run_threads	backend.c	/^static void run_threads(struct sk_out *sk_out)$/;"	f	typeref:typename:void	file:
 runalltests	t/sgunmap-test.py	/^def runalltests(args, qd, batch):$/;"	f
+runascmd	install/bin/fiologparser_hist.py	/^    runascmd = True$/;"	v
+runascmd	install/bin/fiologparser_hist.py	/^runascmd = False$/;"	v
 runascmd	tools/hist/fiologparser_hist.py	/^    runascmd = True$/;"	v
 runascmd	tools/hist/fiologparser_hist.py	/^runascmd = False$/;"	v
 runcdevtrimtest	t/sgunmap-test.py	/^def runcdevtrimtest(args, qd, batch):$/;"	f
@@ -14730,6 +14944,7 @@ sequence	blktrace_api.h	/^	__u32 sequence;		\/* event number *\/$/;"	m	struct:bl
 sequence	lib/seqlock.h	/^	std::atomic<unsigned int> sequence;$/;"	m	struct:seqlock	typeref:typename:std::atomic<unsigned int>
 serialize_overlap	thread_options.h	/^	uint32_t serialize_overlap;$/;"	m	struct:thread_options_pack	typeref:typename:uint32_t
 serialize_overlap	thread_options.h	/^	unsigned int serialize_overlap;$/;"	m	struct:thread_options	typeref:typename:unsigned int
+series	install/bin/fiologparser.py	/^    series = []$/;"	v
 series	tools/fiologparser.py	/^    series = []$/;"	v
 server	server.h	/^	uint8_t server[128];$/;"	m	struct:cmd_client_probe_pdu	typeref:typename:uint8_t[128]
 server_cleanup	engines/librpma_gpspm.c	/^static void server_cleanup(struct thread_data *td)$/;"	f	typeref:typename:void	file:
@@ -14758,7 +14973,9 @@ set	graph.c	/^void graph_set_graph_all_zeroes(struct graph *g, unsigned int set)
 set	graph.h	/^extern void graph_set_graph_all_zeroes(struct graph *g, unsigned int set);$/;"	z	prototype:graph_set_graph_all_zeroes	typeref:typename:unsigned int	file:
 set	lib/bloom.c	/^			  bool set)$/;"	z	function:__bloom_check	typeref:typename:bool	file:
 set	lib/bloom.c	/^		  bool set)$/;"	z	function:bloom_string	typeref:typename:bool	file:
+setUp	install/bin/fio-histo-log-pctiles.py	/^    def setUp(self):$/;"	m	class:Test
 setUp	tools/hist/fio-histo-log-pctiles.py	/^    def setUp(self):$/;"	m	class:Test
+setUpClass	install/bin/fio-histo-log-pctiles.py	/^    def setUpClass(cls):$/;"	m	class:Test
 setUpClass	tools/hist/fio-histo-log-pctiles.py	/^    def setUpClass(cls):$/;"	m	class:Test
 setW	crc/sha1.c	/^#define setW(/;"	d	file:
 set_already_allocated	filesetup.c	/^static void set_already_allocated(const char *fname)$/;"	f	typeref:typename:void	file:
@@ -14925,6 +15142,7 @@ should_account	io_u.c	/^static bool should_account(struct thread_data *td)$/;"	f
 should_check_rate	fio.h	/^static inline bool should_check_rate(struct thread_data *td)$/;"	f	typeref:typename:bool
 should_do_random	io_u.c	/^static bool should_do_random(struct thread_data *td, enum fio_ddir ddir)$/;"	f	typeref:typename:bool	file:
 should_fsync	fio.h	/^static inline bool should_fsync(struct thread_data *td)$/;"	f	typeref:typename:bool
+should_not_get_here	install/bin/fio-histo-log-pctiles.py	/^  should_not_get_here = False$/;"	v
 should_not_get_here	tools/hist/fio-histo-log-pctiles.py	/^  should_not_get_here = False$/;"	v
 show	gfio.c	/^static void set_menu_entry_visible(struct gui *ui, const char *path, int show)$/;"	z	function:set_menu_entry_visible	typeref:typename:int	file:
 show	t/verify-state.c	/^static void show(struct thread_io_list *s, size_t size)$/;"	f	typeref:typename:void	file:
@@ -14945,6 +15163,7 @@ show_disk_util	stat.c	/^void show_disk_util(int terse, struct json_object *paren
 show_file	t/verify-state.c	/^static int show_file(const char *file)$/;"	f	typeref:typename:int	file:
 show_group_stats	stat.c	/^void show_group_stats(struct group_run_stats *rs, struct buf_output *out)$/;"	f	typeref:typename:void
 show_group_stats	stat.h	/^extern void show_group_stats(struct group_run_stats *rs, struct buf_output *);$/;"	p	typeref:typename:void
+show_help	install/bin/genfio	/^show_help() {$/;"	f
 show_help	tools/genfio	/^show_help() {$/;"	f
 show_idle_prof_stats	idletime.c	/^void show_idle_prof_stats(int output, struct json_object *parent,$/;"	f	typeref:typename:void
 show_idle_prof_stats	idletime.h	/^extern void show_idle_prof_stats(int, struct json_object *, struct buf_output *);$/;"	p	typeref:typename:void
@@ -16269,6 +16488,18 @@ td	engines/libzbc.c	/^static int libzbc_open_file(struct thread_data *td, struct
 td	engines/libzbc.c	/^static int libzbc_report_zones(struct thread_data *td, struct fio_file *f,$/;"	z	function:libzbc_report_zones	typeref:struct:thread_data *	file:
 td	engines/libzbc.c	/^static int libzbc_reset_wp(struct thread_data *td, struct fio_file *f,$/;"	z	function:libzbc_reset_wp	typeref:struct:thread_data *	file:
 td	engines/libzbc.c	/^static void libzbc_cleanup(struct thread_data *td)$/;"	z	function:libzbc_cleanup	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static bool fio_madvise_file(struct thread_data *td, struct fio_file *f,$/;"	z	function:fio_madvise_file	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static enum fio_q_status fio_mmapio_queue(struct thread_data *td,$/;"	z	function:fio_mmapio_queue	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmap_file(struct thread_data *td, struct fio_file *f,$/;"	z	function:fio_mmap_file	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmap_get_private(struct thread_data *td)$/;"	z	function:fio_mmap_get_private	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmap_get_shared(struct thread_data *td)$/;"	z	function:fio_mmap_get_shared	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmapio_close_file(struct thread_data *td, struct fio_file *f)$/;"	z	function:fio_mmapio_close_file	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmapio_get_file_size(struct thread_data *td, struct fio_file *f){$/;"	z	function:fio_mmapio_get_file_size	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmapio_init(struct thread_data *td)$/;"	z	function:fio_mmapio_init	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmapio_open_file(struct thread_data *td, struct fio_file *f)$/;"	z	function:fio_mmapio_open_file	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmapio_prep(struct thread_data *td, struct io_u *io_u)$/;"	z	function:fio_mmapio_prep	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmapio_prep_full(struct thread_data *td, struct io_u *io_u)$/;"	z	function:fio_mmapio_prep_full	typeref:struct:thread_data *	file:
+td	engines/mmap-anno.c	/^static int fio_mmapio_prep_limited(struct thread_data *td, struct io_u *io_u)$/;"	z	function:fio_mmapio_prep_limited	typeref:struct:thread_data *	file:
 td	engines/mmap.c	/^static bool fio_madvise_file(struct thread_data *td, struct fio_file *f,$/;"	z	function:fio_madvise_file	typeref:struct:thread_data *	file:
 td	engines/mmap.c	/^static enum fio_q_status fio_mmapio_queue(struct thread_data *td,$/;"	z	function:fio_mmapio_queue	typeref:struct:thread_data *	file:
 td	engines/mmap.c	/^static int fio_mmap_file(struct thread_data *td, struct fio_file *f,$/;"	z	function:fio_mmap_file	typeref:struct:thread_data *	file:
@@ -16966,8 +17197,10 @@ td_zone_free_index	zone-dist.c	/^void td_zone_free_index(struct thread_data *td)
 td_zone_free_index	zone-dist.h	/^void td_zone_free_index(struct thread_data *td);$/;"	p	typeref:typename:void
 td_zone_gen_index	zone-dist.c	/^void td_zone_gen_index(struct thread_data *td)$/;"	f	typeref:typename:void
 td_zone_gen_index	zone-dist.h	/^void td_zone_gen_index(struct thread_data *td);$/;"	p	typeref:typename:void
+tearDownClass	install/bin/fio-histo-log-pctiles.py	/^    def tearDownClass(cls):$/;"	m	class:Test
 tearDownClass	tools/hist/fio-histo-log-pctiles.py	/^    def tearDownClass(cls):$/;"	m	class:Test
 temp_stall_ts	backend.c	/^int temp_stall_ts;$/;"	v	typeref:typename:int
+tempdir	install/bin/fio-histo-log-pctiles.py	/^    tempdir = None$/;"	v	class:Test
 tempdir	tools/hist/fio-histo-log-pctiles.py	/^    tempdir = None$/;"	v	class:Test
 templates_path	doc/conf.py	/^templates_path = ['_templates']$/;"	v
 terminate	fio.h	/^	volatile bool terminate;$/;"	m	struct:thread_data	typeref:typename:volatile bool
@@ -16984,24 +17217,41 @@ test	lib/memcpy.c	/^static void t_hybrid(struct memcpy_test *test)$/;"	z	functio
 test	lib/memcpy.c	/^static void t_memcpy(struct memcpy_test *test)$/;"	z	function:t_memcpy	typeref:struct:memcpy_test *	file:
 test	lib/memcpy.c	/^static void t_memmove(struct memcpy_test *test)$/;"	z	function:t_memmove	typeref:struct:memcpy_test *	file:
 test	lib/memcpy.c	/^static void t_simple(struct memcpy_test *test)$/;"	z	function:t_simple	typeref:struct:memcpy_test *	file:
+test_a_add_histos	install/bin/fio-histo-log-pctiles.py	/^    def test_a_add_histos(self):$/;"	m	class:Test
 test_a_add_histos	tools/hist/fio-histo-log-pctiles.py	/^    def test_a_add_histos(self):$/;"	m	class:Test
+test_b1_parse_log	install/bin/fio-histo-log-pctiles.py	/^    def test_b1_parse_log(self):$/;"	m	class:Test
 test_b1_parse_log	tools/hist/fio-histo-log-pctiles.py	/^    def test_b1_parse_log(self):$/;"	m	class:Test
+test_b2_parse_empty_log	install/bin/fio-histo-log-pctiles.py	/^    def test_b2_parse_empty_log(self):$/;"	m	class:Test
 test_b2_parse_empty_log	tools/hist/fio-histo-log-pctiles.py	/^    def test_b2_parse_empty_log(self):$/;"	m	class:Test
+test_b3_parse_empty_records	install/bin/fio-histo-log-pctiles.py	/^    def test_b3_parse_empty_records(self):$/;"	m	class:Test
 test_b3_parse_empty_records	tools/hist/fio-histo-log-pctiles.py	/^    def test_b3_parse_empty_records(self):$/;"	m	class:Test
+test_b4_parse_non_int	install/bin/fio-histo-log-pctiles.py	/^    def test_b4_parse_non_int(self):$/;"	m	class:Test
 test_b4_parse_non_int	tools/hist/fio-histo-log-pctiles.py	/^    def test_b4_parse_non_int(self):$/;"	m	class:Test
+test_b5_parse_neg_int	install/bin/fio-histo-log-pctiles.py	/^    def test_b5_parse_neg_int(self):$/;"	m	class:Test
 test_b5_parse_neg_int	tools/hist/fio-histo-log-pctiles.py	/^    def test_b5_parse_neg_int(self):$/;"	m	class:Test
+test_b6_parse_too_few_int	install/bin/fio-histo-log-pctiles.py	/^    def test_b6_parse_too_few_int(self):$/;"	m	class:Test
 test_b6_parse_too_few_int	tools/hist/fio-histo-log-pctiles.py	/^    def test_b6_parse_too_few_int(self):$/;"	m	class:Test
+test_b7_parse_invalid_direction	install/bin/fio-histo-log-pctiles.py	/^    def test_b7_parse_invalid_direction(self):$/;"	m	class:Test
 test_b7_parse_invalid_direction	tools/hist/fio-histo-log-pctiles.py	/^    def test_b7_parse_invalid_direction(self):$/;"	m	class:Test
+test_b8_parse_bsz_too_big	install/bin/fio-histo-log-pctiles.py	/^    def test_b8_parse_bsz_too_big(self):$/;"	m	class:Test
 test_b8_parse_bsz_too_big	tools/hist/fio-histo-log-pctiles.py	/^    def test_b8_parse_bsz_too_big(self):$/;"	m	class:Test
+test_b9_parse_wrong_bucket_count	install/bin/fio-histo-log-pctiles.py	/^    def test_b9_parse_wrong_bucket_count(self):$/;"	m	class:Test
 test_b9_parse_wrong_bucket_count	tools/hist/fio-histo-log-pctiles.py	/^    def test_b9_parse_wrong_bucket_count(self):$/;"	m	class:Test
+test_c1_time_ranges	install/bin/fio-histo-log-pctiles.py	/^    def test_c1_time_ranges(self):$/;"	m	class:Test
 test_c1_time_ranges	tools/hist/fio-histo-log-pctiles.py	/^    def test_c1_time_ranges(self):$/;"	m	class:Test
 test_clock	t/time-test.c	/^static long long test_clock(int mode, int cycles_per_usec, int fast_test,$/;"	f	typeref:typename:long long	file:
+test_d1_align_histo_log_1_quantum	install/bin/fio-histo-log-pctiles.py	/^    def test_d1_align_histo_log_1_quantum(self):$/;"	m	class:Test
 test_d1_align_histo_log_1_quantum	tools/hist/fio-histo-log-pctiles.py	/^    def test_d1_align_histo_log_1_quantum(self):$/;"	m	class:Test
+test_d1a_align_2rec_histo_log_epoch_1_quantum_1sec	install/bin/fio-histo-log-pctiles.py	/^    def test_d1a_align_2rec_histo_log_epoch_1_quantum_1sec(self):$/;"	m	class:Test
 test_d1a_align_2rec_histo_log_epoch_1_quantum_1sec	tools/hist/fio-histo-log-pctiles.py	/^    def test_d1a_align_2rec_histo_log_epoch_1_quantum_1sec(self):$/;"	m	class:Test
+test_d1b_align_2rec_histo_log_epoch_1_quantum_5sec	install/bin/fio-histo-log-pctiles.py	/^    def test_d1b_align_2rec_histo_log_epoch_1_quantum_5sec(self):$/;"	m	class:Test
 test_d1b_align_2rec_histo_log_epoch_1_quantum_5sec	tools/hist/fio-histo-log-pctiles.py	/^    def test_d1b_align_2rec_histo_log_epoch_1_quantum_5sec(self):$/;"	m	class:Test
+test_d2_align_histo_log_2_quantum	install/bin/fio-histo-log-pctiles.py	/^    def test_d2_align_histo_log_2_quantum(self):$/;"	m	class:Test
 test_d2_align_histo_log_2_quantum	tools/hist/fio-histo-log-pctiles.py	/^    def test_d2_align_histo_log_2_quantum(self):$/;"	m	class:Test
 test_duration	profiles/act.c	/^	unsigned long long test_duration;$/;"	m	struct:act_options	typeref:typename:unsigned long long	file:
+test_e1_get_pctiles_flat_histo	install/bin/fio-histo-log-pctiles.py	/^    def test_e1_get_pctiles_flat_histo(self):$/;"	m	class:Test
 test_e1_get_pctiles_flat_histo	tools/hist/fio-histo-log-pctiles.py	/^    def test_e1_get_pctiles_flat_histo(self):$/;"	m	class:Test
+test_e2_get_pctiles_highest_pct	install/bin/fio-histo-log-pctiles.py	/^    def test_e2_get_pctiles_highest_pct(self):$/;"	m	class:Test
 test_e2_get_pctiles_highest_pct	tools/hist/fio-histo-log-pctiles.py	/^    def test_e2_get_pctiles_highest_pct(self):$/;"	m	class:Test
 test_memalign_1	unittests/lib/memalign.c	/^static void test_memalign_1(void)$/;"	f	typeref:typename:void	file:
 test_multi	t/axmap.c	/^static int test_multi(uint64_t size, unsigned int bit_off)$/;"	f	typeref:typename:int	file:
@@ -17091,6 +17341,7 @@ this_depth	blktrace.c	/^static void depth_end(struct blk_io_trace *t, int *this_
 this_io_blocks	fio.h	/^	uint64_t this_io_blocks[DDIR_RWDIR_CNT];$/;"	m	struct:thread_data	typeref:typename:uint64_t[]
 this_io_bytes	fio.h	/^	uint64_t this_io_bytes[DDIR_RWDIR_CNT];$/;"	m	struct:thread_data	typeref:typename:uint64_t[]
 this_io_bytes	stat.c	/^			 uint64_t *this_io_bytes, uint64_t *stat_io_bytes,$/;"	z	function:__add_samples	typeref:typename:uint64_t *	file:
+thp	engines/mmap-anno.c	/^	unsigned int thp;$/;"	m	struct:mmap_options	typeref:typename:unsigned int	file:
 thp	engines/mmap.c	/^	unsigned int thp;$/;"	m	struct:mmap_options	typeref:typename:unsigned int	file:
 thr_number	eta.c	/^void print_status_init(int thr_number)$/;"	z	function:print_status_init	typeref:typename:int	file:
 thread	fio.h	/^	pthread_t thread;$/;"	m	struct:thread_data	typeref:typename:pthread_t
@@ -17166,6 +17417,7 @@ time_in_queue	diskutil.h	/^	uint64_t time_in_queue;$/;"	m	struct:disk_util_agg	t
 time_in_queue	diskutil.h	/^	uint64_t time_in_queue;$/;"	m	struct:disk_util_stats	typeref:typename:uint64_t
 time_nsec	verify.h	/^	uint32_t time_nsec;$/;"	m	struct:verify_header	typeref:typename:uint32_t
 time_offset	fio.h	/^	long time_offset;$/;"	m	struct:thread_data	typeref:typename:long
+time_ranges	install/bin/fio-histo-log-pctiles.py	/^def time_ranges(groups, counters_per_group, fio_version=3):$/;"	f
 time_ranges	tools/hist/fio-histo-log-pctiles.py	/^def time_ranges(groups, counters_per_group, fio_version=3):$/;"	f
 time_sec	verify.h	/^	uint32_t time_sec;$/;"	m	struct:verify_header	typeref:typename:uint32_t
 time_since_genesis	fio_time.h	/^extern uint64_t time_since_genesis(void);$/;"	p	typeref:typename:uint64_t
@@ -17520,6 +17772,8 @@ units_specified	y.tab.c	/^yy_symbol_value_print (FILE *yyo, int yytype, YYSTYPE 
 units_specified	y.tab.c	/^yydestruct (const char *yymsg, int yytype, YYSTYPE *yyvaluep, long long *result, double *dresult/;"	z	function:yydestruct	typeref:typename:int *	file:
 units_specified	y.tab.c	/^yyparse (long long *result, double *dresult, int *has_error, int *units_specified)$/;"	z	function:yyparse	typeref:typename:int *	file:
 units_specified	y.tab.h	/^int yyparse (long long *result, double *dresult, int *has_error, int *units_specified);$/;"	z	prototype:yyparse	typeref:typename:int *	file:
+unittest2_imported	install/bin/fio-histo-log-pctiles.py	/^    unittest2_imported = False$/;"	v
+unittest2_imported	install/bin/fio-histo-log-pctiles.py	/^unittest2_imported = True$/;"	v
 unittest2_imported	tools/hist/fio-histo-log-pctiles.py	/^    unittest2_imported = False$/;"	v
 unittest2_imported	tools/hist/fio-histo-log-pctiles.py	/^unittest2_imported = True$/;"	v
 unittests	t/run-fio-tests.py	/^    def unittests(cls):$/;"	m	class:Requirements
@@ -17555,6 +17809,7 @@ update_clock	t/time-test.c	/^static void update_clock(unsigned long long t)$/;"	
 update_condensed_str	eta.c	/^static void update_condensed_str(char *rstr, char *run_str_condensed)$/;"	f	typeref:typename:void	file:
 update_error_count	td_error.c	/^void update_error_count(struct thread_data *td, int err)$/;"	f	typeref:typename:void
 update_error_count	td_error.h	/^void update_error_count(struct thread_data *td, int err);$/;"	p	typeref:typename:void
+update_extreme	install/bin/fiologparser_hist.py	/^def update_extreme(val, fncn, new_val):$/;"	f
 update_extreme	tools/hist/fiologparser_hist.py	/^def update_extreme(val, fncn, new_val):$/;"	f
 update_graph_limits	gfio.c	/^static void update_graph_limits(void)$/;"	f	typeref:typename:void	file:
 update_io_tick_disk	diskutil.c	/^static void update_io_tick_disk(struct disk_util *du)$/;"	f	typeref:typename:void	file:
@@ -17569,6 +17824,7 @@ update_rusage	fio.h	/^	volatile int update_rusage;$/;"	m	struct:thread_data	type
 update_rusage_stat	stat.c	/^void update_rusage_stat(struct thread_data *td)$/;"	f	typeref:typename:void
 update_rusage_stat	stat.h	/^extern void update_rusage_stat(struct thread_data *);$/;"	p	typeref:typename:void
 update_ts_cache	backend.c	/^static inline void update_ts_cache(struct thread_data *td)$/;"	f	typeref:typename:void	file:
+upper_bin_vals	install/bin/fiologparser_hist.py	/^upper_bin_vals = [] # upper edge of each bin $/;"	v
 upper_bin_vals	tools/hist/fiologparser_hist.py	/^upper_bin_vals = [] # upper edge of each bin $/;"	v
 uri	engines/http.c	/^		int op, const char *uri, char *buf, size_t len)$/;"	z	function:_add_aws_auth_header	typeref:typename:const char *	file:
 uri	engines/http.c	/^		int op, const char *uri, char *buf, size_t len)$/;"	z	function:_add_swift_header	typeref:typename:const char *	file:
@@ -17724,6 +17980,7 @@ val2	thread_options.h	/^	unsigned long long val2[ZONESPLIT_MAX];$/;"	m	struct:sp
 val_store	parse.c	/^#define val_store(/;"	d	file:
 val_too_large	parse.c	/^static bool val_too_large(const struct fio_option *o, unsigned long long val,$/;"	f	typeref:typename:bool	file:
 val_too_small	parse.c	/^static bool val_too_small(const struct fio_option *o, unsigned long long val,$/;"	f	typeref:typename:bool	file:
+validate	install/bin/fio_jsonplus_clat2csv	/^def validate(args, jsondata, col_labels):$/;"	f
 validate	tools/fio_jsonplus_clat2csv	/^def validate(args, jsondata, col_labels):$/;"	f
 vals	blktrace.c	/^static int init_merge_param_list(fio_fp64_t *vals, struct blktrace_cursor *bcs,$/;"	z	function:init_merge_param_list	typeref:typename:fio_fp64_t *	file:
 vals	goptions.c	/^static void gopt_int_range_set_val(struct gopt_range *r, unsigned int *vals)$/;"	z	function:gopt_int_range_set_val	typeref:typename:unsigned int *	file:
@@ -18012,8 +18269,11 @@ wc	engines/rdma.c	/^static int client_recv(struct thread_data *td, struct ibv_wc
 wc	engines/rdma.c	/^static int server_recv(struct thread_data *td, struct ibv_wc *wc)$/;"	z	function:server_recv	typeref:struct:ibv_wc *	file:
 wd	engines/windowsaio.c	/^	struct windowsaio_data *wd;$/;"	m	struct:thread_ctx	typeref:struct:windowsaio_data *	file:
 weight	flow.c	/^				        unsigned int weight)$/;"	z	function:flow_put	typeref:typename:unsigned int	file:
+weighted_average	install/bin/fiologparser_hist.py	/^def weighted_average(vs, ws):$/;"	f
 weighted_average	tools/hist/fiologparser_hist.py	/^def weighted_average(vs, ws):$/;"	f
+weighted_percentile	install/bin/fiologparser_hist.py	/^def weighted_percentile(percs, vs, ws):$/;"	f
 weighted_percentile	tools/hist/fiologparser_hist.py	/^def weighted_percentile(percs, vs, ws):$/;"	f
+weights	install/bin/fiologparser_hist.py	/^def weights(start_ts, end_ts, start, end):$/;"	f
 weights	tools/hist/fiologparser_hist.py	/^def weights(start_ts, end_ts, start, end):$/;"	f
 what	iolog.c	/^	      enum file_log_act what)$/;"	z	function:log_file	typeref:enum:file_log_act	file:
 which	os/os-android.h	/^static inline int ioprio_set(int which, int who, int ioprio_class, int ioprio)$/;"	z	function:ioprio_set	typeref:typename:int	file:
