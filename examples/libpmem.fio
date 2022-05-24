@@ -1,7 +1,6 @@
 [global]
 bs=4K
 size=10g
-ioengine=libpmem
 norandommap
 time_based
 group_reporting
@@ -65,6 +64,7 @@ cpus_allowed_policy=split
 directory=/pmem0
 
 #[libpmem-seqwrite]
+#ioengine=libpmem
 #filename=fio_write
 #numjobs=12
 #rw=write

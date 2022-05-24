@@ -1,7 +1,7 @@
 [global]
 bs=256B
 size=1g
-ioengine=mmap-anno
+ioengine=mmap
 norandommap
 time_based
 group_reporting
@@ -39,7 +39,7 @@ cpus_allowed_policy=split
 
 
 [mmap-seqwrite]
-numjobs=1
+numjobs=2
 rw=write
 new_group
 

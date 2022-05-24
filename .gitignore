@@ -2,7 +2,7 @@
 *.o
 *.so
 *.exe
-
+.tags
 /install
 /.depend
 /FIO-VERSION-FILE
