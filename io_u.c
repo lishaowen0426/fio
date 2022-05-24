@@ -1359,7 +1359,6 @@ static struct fio_file *get_next_file(struct thread_data *td)
 static long set_io_u_file(struct thread_data *td, struct io_u *io_u)
 {
 	struct fio_file *f;
-
 	do {
 		f = get_next_file(td);
 		if (IS_ERR_OR_NULL(f))

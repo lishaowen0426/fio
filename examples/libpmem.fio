@@ -1,5 +1,5 @@
 [global]
-bs=256B
+bs=4K
 size=10g
 ioengine=libpmem
 norandommap
@@ -64,8 +64,14 @@ cpus_allowed_policy=split
 #filename=/pmem0/fio_file
 directory=/pmem0
 
-[libpmem-seqwrite]
-filename=fio_write
+#[libpmem-seqwrite]
+#filename=fio_write
+#numjobs=12
+#rw=write
+#new_group
+
+[dram-seqwrite]
+ioengine=mmap-anno
 numjobs=12
 rw=write
 new_group

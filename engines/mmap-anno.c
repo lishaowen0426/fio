@@ -106,7 +106,7 @@ static int fio_mmap_file(struct thread_data *td, struct fio_file *f,
 	} else
 		flags = PROT_READ;
 
-	fmd->mmap_ptr = mmap(NULL, length, flags, private, -1, off);
+	fmd->mmap_ptr = mmap(NULL, length, flags, private | MAP_ANONYMOUS, -1, off);
 	if (fmd->mmap_ptr == MAP_FAILED) {
 		fmd->mmap_ptr = NULL;
 		td_verror(td, errno, "mmap");
@@ -279,7 +279,8 @@ static int fio_mmapio_open_file(struct thread_data *td, struct fio_file *f)
 	struct fio_mmap_data *fmd;
 	int ret;
 
-	ret = generic_open_file(td, f);
+	//ret = generic_open_file(td, f);
+        ret = 0;
 	if (ret)
 		return ret;
 
@@ -302,7 +303,12 @@ static int fio_mmapio_close_file(struct thread_data *td, struct fio_file *f)
 	free(fmd);
 	fio_file_clear_partial_mmap(f);
 
-	return generic_close_file(td, f);
+        //return generic_close_file(td, f);
+	return 0;
+}
+static int fio_mmapio_get_file_size(struct thread_data *td, struct fio_file *f){
+    
+    return 0;
 }
 
 static struct ioengine_ops ioengine = {
@@ -314,7 +320,7 @@ static struct ioengine_ops ioengine = {
 	.open_file	= fio_mmapio_open_file,
 	.close_file	= fio_mmapio_close_file,
 	.get_file_size	= generic_get_file_size,
-	.flags		= FIO_SYNCIO | FIO_NOEXTEND,
+	.flags		= FIO_SYNCIO | FIO_NOEXTEND | FIO_DISKLESSIO ,
 #ifdef CONFIG_HAVE_THP
 	.options	= options,
 	.option_struct_size = sizeof(struct mmap_options),

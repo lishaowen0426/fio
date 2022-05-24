@@ -1524,8 +1524,10 @@ static int add_job(struct thread_data *td, const char *jobname, int job_add_num,
 	file_alloced = 0;
 	if (!o->filename && !td->files_index && !o->read_iolog_file) {
 		file_alloced = 1;
-
-		if (o->nr_files == 1 && exists_and_not_regfile(jobname))
+                if(!strcmp(td->io_ops->name, "mmap-anno")){
+			add_file(td, "mmap-anno", job_add_num, 0);
+                }
+		else if (o->nr_files == 1 && exists_and_not_regfile(jobname))
 			add_file(td, jobname, job_add_num, 0);
 		else {
 			for (i = 0; i < o->nr_files; i++)
@@ -1841,7 +1843,6 @@ static int add_job(struct thread_data *td, const char *jobname, int job_add_num,
 		if (add_job(td_new, jobname, numjobs, 1, client_type))
 			goto err;
 	}
-
 	return 0;
 err:
 	put_job(td);
@@ -3102,7 +3103,6 @@ int parse_options(int argc, char *argv[])
 
 	if (output_format & FIO_OUTPUT_NORMAL)
 		log_info("%s\n", fio_version_string);
-
 	return 0;
 }
 

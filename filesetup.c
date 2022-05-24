@@ -287,7 +287,6 @@ static bool pre_read_file(struct thread_data *td, struct fio_file *f)
 
 	if (f->filetype == FIO_TYPE_CHAR)
 		return true;
-
 	if (!fio_file_open(f)) {
 		if (td->io_ops->open_file(td, f)) {
 			log_err("fio: cannot pre-read, failed to open file\n");
@@ -538,7 +537,7 @@ err:
 }
 
 static int get_file_size(struct thread_data *td, struct fio_file *f)
-{
+        {
 	int ret = 0;
 
 	if (fio_file_size_known(f))
@@ -576,7 +575,8 @@ static int get_file_size(struct thread_data *td, struct fio_file *f)
 					(unsigned long long) f->real_file_size);
 		return 1;
 	}
-
+        dprint(FD_FILE, "realsize:%lu\n", f->real_file_size);
+        exit(1);
 	fio_file_set_size_known(f);
 	return 0;
 }
@@ -863,7 +863,6 @@ static int get_file_sizes(struct thread_data *td)
 	struct fio_file *f;
 	unsigned int i;
 	int err = 0;
-
 	for_each_file(td, f, i) {
 		dprint(FD_FILE, "get file size for %p/%d/%s\n", f, i,
 								f->file_name);
@@ -1109,6 +1108,7 @@ int setup_files(struct thread_data *td)
 	old_state = td_bump_runstate(td, TD_SETTING_UP);
 
 	for_each_file(td, f, i) {
+            dprint(FD_FILE, "filename %s\n", f->file_name);
 		if (!td_ioengine_flagged(td, FIO_DISKLESSIO) &&
 		    strchr(f->file_name, FIO_OS_PATH_SEPARATOR) &&
 		    !(td->flags & TD_F_DIRS_CREATED) &&
@@ -1148,6 +1148,7 @@ int setup_files(struct thread_data *td)
 	total_size = 0;
 	for_each_file(td, f, i) {
 		f->fileno = i;
+                dprint(FD_FILE, "file real size: %lu\n", f->real_file_size);
 		if (f->real_file_size == -1ULL)
 			total_size = -1ULL;
 		else
@@ -1320,6 +1321,8 @@ int setup_files(struct thread_data *td)
 	 * target regular files don't exist yet, but our jobs require them
 	 * initially due to read I/Os.
 	 */
+        
+        dprint(FD_FILE, " need_extend %d\n", need_extend);
 	if (need_extend) {
 		temp_stall_ts = 1;
 		if (output_format & FIO_OUTPUT_NORMAL) {
@@ -1428,7 +1431,6 @@ done:
 		td->done = 1;
 
 	td_restore_runstate(td, old_state);
-
 	return 0;
 
 err_offset:
@@ -1848,9 +1850,7 @@ int add_file(struct thread_data *td, const char *fname, int numjob, int inc)
 
 	/* can't handle smalloc failure from here */
 	assert(f->file_name);
-
 	get_file_type(f);
-
 	switch (td->o.file_lock_mode) {
 	case FILE_LOCK_NONE:
 		break;
@@ -1866,7 +1866,6 @@ int add_file(struct thread_data *td, const char *fname, int numjob, int inc)
 	}
 
 	td->files_index++;
-
 	if (td->o.numjobs > 1)
 		set_already_allocated(file_name);
 
@@ -1875,7 +1874,6 @@ int add_file(struct thread_data *td, const char *fname, int numjob, int inc)
 
 	dprint(FD_FILE, "file %p \"%s\" added at %d\n", f, f->file_name,
 							cur_files);
-
 	return cur_files;
 }
 

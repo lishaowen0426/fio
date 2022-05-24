@@ -508,7 +508,6 @@ int td_io_open_file(struct thread_data *td, struct fio_file *f)
 	assert(!fio_file_open(f));
 	assert(f->fd == -1);
 	assert(td->io_ops->open_file);
-
 	if (td->io_ops->open_file(td, f)) {
 		if (td->error == EINVAL && td->o.odirect)
 			log_err("fio: destination does not support O_DIRECT\n");

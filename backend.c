@@ -1047,7 +1047,6 @@ static void do_io(struct thread_data *td, uint64_t *bytes_done)
 		    td->o.verify != VERIFY_NONE &&
 		    !td->o.experimental_verify)
 			log_io_piece(td, io_u);
-
 		if (td->o.io_submit_mode == IO_MODE_OFFLOAD) {
 			const unsigned long long blen = io_u->xfer_buflen;
 			const enum fio_ddir __ddir = acct_ddir(io_u);
@@ -1793,7 +1792,6 @@ static void *thread_main(void *data)
 
 	if (!o->create_serialize && setup_files(td))
 		goto err;
-
 	if (!init_random_map(td))
 		goto err;
 
@@ -1828,7 +1826,6 @@ static void *thread_main(void *data)
 
 	memset(bytes_done, 0, sizeof(bytes_done));
 	clear_state = false;
-
 	while (keep_running(td)) {
 		uint64_t verify_bytes;
 
@@ -2265,6 +2262,7 @@ static bool waitee_running(struct thread_data *me)
  */
 static void run_threads(struct sk_out *sk_out)
 {
+
 	struct thread_data *td;
 	unsigned int i, todo, nr_running, nr_started;
 	uint64_t m_rate, t_rate;
@@ -2348,12 +2346,10 @@ reap:
 			}
 		}
 	}
-
 	/* start idle threads before io threads start to run */
 	fio_idle_prof_start();
 
 	set_genesis_time();
-
 	while (todo) {
 		struct thread_data *map[REAL_MAX_JOBS];
 		struct timespec this_start;
@@ -2589,7 +2585,6 @@ int fio_backend(struct sk_out *sk_out)
 	cgroup_list = smalloc(sizeof(*cgroup_list));
 	if (cgroup_list)
 		INIT_FLIST_HEAD(cgroup_list);
-
 	run_threads(sk_out);
 
 	helper_thread_exit();
